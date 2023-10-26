@@ -1,0 +1,50 @@
+.headerContainer {
+  width: 100%;
+  // height: 456px;
+  // position: relative;
+}
+
+.homeImg {
+  height: 456px;
+  width: 100%;
+  object-fit: cover;
+  // @media (max-width: 768px) {
+  //   margin-top: 60px;
+  // }
+}
+.logoImg {
+  width: 26px;
+  height: 19px;
+  margin: auto 5px;
+}
+.blockLeft {
+  background-color: #d1ef1a;
+  text-decoration: none;
+}
+.blockLeft:hover ,.blockRight:hover{
+  opacity: 0.5;
+  background: var(--main, #d1ef1a);
+}
+
+.blockRight {
+  background-color: #a1b719;
+  text-decoration: none;
+}
+
+.blockLeft p {
+  color: #3e3b35;
+  margin-block: 10px;
+}
+.blockRight p {
+  margin-block: 10px;
+  color: #3e3b35;
+}
+
+// 手機
+.homeImgPh {
+  width: 100%;
+  height: 182px;
+}
+.blockLeft p, .blockRight p {
+  font-size: 13px;
+}

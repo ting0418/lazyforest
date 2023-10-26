@@ -1,0 +1,378 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* adobe din-condensed */
+@import url("https://use.typekit.net/fna5zqs.css");
+.screen {
+  font-family: "IBM Plex Sans", "din-condensed", "Noto Sans TC Regular", Helvetica, Arial, "PingFang TC", "苹方-繁", "Heiti TC", "黑體-繁", "Microsoft JhengHei", "微軟正黑體", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: #fefff6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.screen .div {
+  background: #fefff6;
+  position: relative;
+  width: 1645px;
+  height: 1600px;
+}
+.screen .title {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  top: 67px;
+}
+.screen .my_map {
+  color: #3e3b35;
+  font-family: "din-condensed", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -1.6px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .text_wrapper {
+  font-weight: 700;
+}
+.screen .span {
+  font-family: "din-condensed", Helvetica;
+  font-weight: 700;
+}
+.screen .text_wrapper_2 {
+  font-family: "IBM Plex Sans", Helvetica;
+  font-weight: 600;
+}
+.screen .my_map_2 {
+  background: #fefff6;
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 54px;
+  position: absolute;
+  top: 212px;
+}
+.screen .tr_th {
+  align-items: flex-start;
+  border-radius: 8px;
+  display: flex;
+  height: 208px;
+  position: relative;
+  width: 1200px;
+}
+.screen .th {
+  align-items: center;
+  align-self: stretch;
+  background-color: #3e3b35;
+  border-radius: 8px 0px 0px 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 24px;
+  justify-content: center;
+  padding: 10px 10px 10px 20px;
+  position: relative;
+}
+.screen .text_wrapper_3 {
+  color: #fefff6;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  line-height: normal;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .text_wrapper_4 {
+  color: #fefff6;
+  font-family: "din-condensed", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .th_2 {
+  align-items: center;
+  align-self: stretch;
+  background-color: #3e3b35;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 24px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.screen .element_OFF {
+  color: #fefff6;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .frame_wrapper {
+  align-items: center;
+  align-self: stretch;
+  background-color: #3e3b35;
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px 20px 10px 10px;
+  position: relative;
+}
+.screen .frame {
+  align-items: center;
+  background-color: #8e8777;
+  border-radius: 4px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 12px 36px;
+  position: relative;
+}
+.screen .p {
+  color: #fefff6;
+  font-family: "din-condensed", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .text_wrapper_5 {
+  font-family: "IBM Plex Sans", Helvetica;
+}
+.screen .rating_map {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 15px;
+  position: relative;
+}
+.screen .vector {
+  height: 993px;
+  margin-bottom: -7px;
+  margin-left: -4px;
+  position: relative;
+  width: 495px;
+}
+.screen .rating_right {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+.screen .rating_location {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+.screen .rectangle {
+  background-color: #fefff6;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2509803922);
+  height: 578px;
+  position: relative;
+  width: 690px;
+}
+.screen .frame_2 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 50px;
+  position: absolute;
+  top: 39px;
+}
+.screen .frame_3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.screen .frame_4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 582px;
+}
+.screen .text_wrapper_6 {
+  align-self: stretch;
+  color: #3e3b35;
+  flex: 1;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+}
+.screen .text_wrapper_7 {
+  align-self: stretch;
+  color: #8e8777;
+  flex: 1;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: right;
+}
+.screen .text_wrapper_8 {
+  color: #3e3b35;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .img {
+  align-self: stretch;
+  height: 329px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+.screen .rating_edit {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.screen .rectangle_2 {
+  background-color: #fefff6;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2509803922);
+  height: 368px;
+  position: relative;
+  width: 690px;
+}
+.screen .frame_5 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 15px;
+  left: 544px;
+  position: absolute;
+  top: 276px;
+}
+.screen .group {
+  background-color: #3e3b35;
+  border-radius: 26.5px;
+  height: 53px;
+  position: relative;
+  width: 53px;
+}
+.screen .pen_to_square_solid {
+  height: 27px;
+  left: 13px;
+  position: absolute;
+  top: 12px;
+  width: 27px;
+  color: #fefff6;
+}
+.screen .trash_can_solid {
+  color: #fefff6;
+  height: 31px;
+  left: 13px;
+  position: absolute;
+  top: 11px;
+  width: 28px;
+}
+.screen .rating_part {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 32px;
+  left: 38px;
+  position: absolute;
+  top: 50px;
+}
+.screen .rating_title {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 41px;
+  position: relative;
+}
+.screen .element {
+  color: #8e8777;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.screen .text_wrapper_9 {
+  font-weight: 500;
+}
+.screen .text_wrapper_10 {
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+}
+.screen .text_wrapper_11 {
+  font-family: "din-condensed", Helvetica;
+  font-weight: 700;
+}
+.screen .stars {
+  flex-direction: column;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  gap: 4px;
+}
+.screen .text_wrapper_12 {
+  color: #3e3b35;
+  font-family: "IBM Plex Sans", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 38.4px;
+  position: relative;
+  text-align: justify;
+  width: 613px;
+}/*# sourceMappingURL=member-map.module.css.map */

@@ -1,0 +1,118 @@
+/* 最上層目錄 */
+.nested-menu {
+  padding-left: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #3e3b35;
+  color: white;
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+/* 最上層內容元素：熱門商品、商品種類、品牌 */
+.menu-item {
+  // position: relative;
+  cursor: pointer;
+  padding-block: 10px;
+  border-top: 4px solid transparent;
+  @media (min-width: 768px) {
+    position: relative;
+  }
+}
+.menu-item:hover {
+  color: #3e3b35;
+  background: #fefff6;
+  border-top: 4px solid #d1ef1a;
+}
+.menu-item-label {
+  padding-inline: 20px;
+  padding-block: 6px;
+  border-right: 0.5px solid #eee;
+}
+
+/* 第一層容器 */
+.submenu {
+  width: 180px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #3e3b35;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 第一層容器展開 */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* 第一層容器元素內容 */
+.submenu-item {
+  color: #fefff6;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 第一層容器 :hover */
+.submenu-item:hover {
+  background-color: #8e8777;
+  border-left: 8px solid #d1ef1a;
+}
+
+/* 第二層容器 */
+.sub-submenu {
+  display: none;
+  position: absolute;
+  width: 210px;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  background-color: #8e8777;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  // @media (max-width: 768px) {
+  //   display: block;
+  // }
+}
+
+/* 第二層容器展開 */
+.submenu-item:hover .sub-submenu {
+  display: block;
+}
+
+/* 第二層元素內容 */
+.sub-submenu-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 第二層元素內容 :hover */
+.sub-submenu-item:hover {
+  //   background-color: #666;
+  color: #d1ef1a;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.TopMenuLink {
+  color: #fefff6;
+}
+
+.menu-item:hover .TopMenuLink {
+  color: #3e3b35;
+}
+
+.SubMenuLink {
+  color: #fefff6;
+}
+
+.SubSubMenuLink {
+  color: #fefff6;
+}
+.sub-submenu-item:hover .SubSubMenuLink {
+  color: #d1ef1a;
+}

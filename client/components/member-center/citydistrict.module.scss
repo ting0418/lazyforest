@@ -1,0 +1,95 @@
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+
+// google Noto Sans TC 字體
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap';
+
+
+// google IBM Plex Sans
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* adobe din-condensed */
+@import url('https://use.typekit.net/fna5zqs.css');
+
+
+.dropdown {
+  background: $light;
+
+
+  .input_3 {
+    color: $secondary;
+    background-color: $light;
+    font-size: 24px;
+    align-items: center;
+    border: 2px solid;
+    border-color: #8e8677;
+    border-radius: 3px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 455px;
+    @media screen and (max-width: 390px) {
+      width: 390px;
+      font-size: 16px;
+    }
+  }
+
+
+  .text_wrapper_5 {
+    background: $light;
+    color: $secondary;
+    flex: 1;
+    font-family: 'IBM Plex Sans', helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    height: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -2px;
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .text_wrapper_5 {
+    background: $light;
+    color: $secondary;
+    flex: 1;
+    font-family: 'IBM Plex Sans', helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -2px;
+    position: relative;
+  }
+  // .input_3 {
+  //   color: $secondary;
+  //   background-color: $light;
+  //   font-size: 16px;
+  //   align-items: center;
+  //   border: 2px solid;
+  //   border-color: #8e8677;
+  //   border-radius: 3px;
+  //   display: flex;
+  //   gap: 10px;
+  //   justify-content: center;
+  //   overflow: hidden;
+  //   padding: 8px 24px;
+  //   position: relative;
+  //   width: 390px;
+  // }
+}
+
+
+

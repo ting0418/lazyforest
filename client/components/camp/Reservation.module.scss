@@ -1,0 +1,19 @@
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+.centered {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px 45px 0 50px;
+  color: $light;
+}
+@media screen and (max-width: 390px) {
+  .centered {
+    font-size: 14px;
+    padding: 15px 0px;
+    color: $light;
+  }
+}

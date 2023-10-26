@@ -1,0 +1,68 @@
+[
+  {
+    "camp_id": 10,
+    "camp_name": "拉拉山樂野露營區",
+    "camp_img": "/images/camp_img/camp01-1.jpeg",
+    "camp_address": "桃園市復興區華陵村11鄰180",
+    "camp_altitude": "海拔 900 公尺",
+    "camp_lastRes": "開放訂位日：2021-02-28",
+    "camp_openRes": "最後可訂位日：2024-12-30",
+    "camp_dayoff": "公休日：星期五",
+    "camp_type": "老手露營",
+    "camp_type2": "仰望星空",
+    "camp_type3": "螢火蟲"
+  },
+  {
+    "camp_id": 9,
+    "camp_name": "威尼斯溫泉露營地",
+    "camp_img": "/images/camp_img/camp09-1.jpeg",
+    "camp_address": "新北市烏來區華陵村11鄰180",
+    "camp_altitude": "海拔 500 公尺",
+    "camp_lastRes": "開放訂位日：2021-08-02",
+    "camp_openRes": "最後可訂位日：2024-01-01",
+    "camp_dayoff": "公休日：星期二、星期三",
+    "camp_type": "星空夜景",
+    "camp_type2": "日出",
+    "camp_type3": "壯麗山景"
+  },
+  {
+    "camp_id": 1,
+    "camp_name": "峇嵐杉丘",
+    "camp_img": "/images/camp_img/camp07-3.jpeg",
+    "camp_address": "南投縣魚池鄉中明村8鄰文正巷2之6號",
+    "camp_altitude": "海拔 400 公尺",
+    "camp_lastRes": "開放訂位日：2021-08-02",
+    "camp_openRes": "最後可訂位日：2024-01-01",
+    "camp_dayoff": "公休日：星期四",
+    "camp_type": "老手露營",
+    "camp_type2": "溪邊烤肉",
+    "camp_type3": "雲海",
+    "camp_type2": "日出"
+  },
+  {
+    "camp_id": 6,
+    "camp_name": "飛鳥恰恰",
+    "camp_img": "/images/camp_img/camp23-3.jpeg",
+    "camp_address": "新竹縣五峰鄉花園村竹62縣道10.2K處",
+    "camp_altitude": "海拔 860 公尺",
+    "camp_lastRes": "開放訂位日：2021-07-02",
+    "camp_openRes": "最後可訂位日：2024-10-23",
+    "camp_dayoff": "全年無休",
+    "camp_type": "河景",
+    "camp_type2": "夕陽日落",
+    "camp_type3": "螢火蟲"
+  },
+  {
+    "camp_id": 8,
+    "camp_name": "半島秘境",
+    "camp_img": "/images/camp_img/camp29-1.jpeg",
+    "camp_address": "新北市石門區下員坑15號",
+    "camp_altitude": "海拔 900 公尺",
+    "camp_lastRes": "開放訂位日：2021-09-16",
+    "camp_openRes": "最後可訂位日：2024-03-09",
+    "camp_dayoff": "公休日：星期一",
+    "camp_type": "朔溪",
+    "camp_type2": "老手露營",
+    "camp_type3": "山景"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "workbench.colorCustomizations": {
+    
+    "activityBar.background": "#9ab0a7",
+    "activityBar.foreground": "#d5d5d5",
+    "activityBar.inactiveForeground":"#272222",
+    "titleBar.activeBackground": "#b1d6c6",
+    "titleBar.activeForeground": "#2f453d"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": ".prettierrc.json",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",
+    "source.fixAll.eslint"
+  ],
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  }
+}

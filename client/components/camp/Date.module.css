@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.searchBar {
+  height: 148px;
+  background-color: #3e3b35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px #8e8777 solid;
+}
+
+.datePickerInput {
+  background-color: rgba(62, 59, 53, 0);
+  border: #fefff6 1px solid;
+  color: #fefff6;
+  width: 286px;
+  height: 66px;
+  font-size: 24px;
+  border-radius: 3px;
+  padding-left: 20px;
+}
+
+.searchInput {
+  background-color: transparent;
+  border: #fefff6 1px solid;
+  color: #fefff6;
+  width: 286px;
+  height: 66px;
+  border-radius: 3px;
+  margin-left: 44px;
+  margin-right: 44px;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.searchButton {
+  height: 60px;
+  width: 60px;
+  background: #d1ef1a;
+  border: 0px;
+  color: #3e3b35;
+  font-size: 35px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarIcon {
+  margin-left: -40px;
+  margin-bottom: 5px;
+  color: #fefff6;
+  font-size: 33px;
+}
+
+.datePickerRow {
+  display: flex;
+  align-items: center;
+}
+.datePickerRow .datePickerLeft {
+  margin-left: 203px; /* 将DatePicker元素移动到最左边203px */
+}
+
+.dateSeparator {
+  margin: 0 10px; /* 调整分隔符的左右边距 */
+  font-size: 50px;
+  color: #fefff6;
+  padding: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .datePickerRow {
+    display: flex;
+    align-items: center;
+  }
+  .datePickerRow .datePickerLeft {
+    margin-left: 20px; /* 将DatePicker元素移动到最左边203px */
+  }
+  .calendarIcon {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    color: #fefff6;
+    font-size: 14px;
+  }
+  .dateSeparator {
+    font-size: 20px;
+    color: #fefff6;
+    padding-left: 8px;
+    padding-right: 0px;
+  }
+}/*# sourceMappingURL=Date.module.css.map */

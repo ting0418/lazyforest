@@ -1,0 +1,72 @@
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+.review-card {
+  width: 340px;
+  height: 340px;
+  // border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 30px;
+  
+
+  .reviews{
+
+    .reviewContent{
+      white-space: pre-wrap;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin-right: 16px; 
+}
+
+.username {
+  font-size: 14px;
+  flex-grow: 1; 
+}
+
+.user-details h3 {
+  font-size: 14px;
+}
+
+
+.reviewContent {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.owner-reply {
+  color: $secondary;
+  margin-top: 8px;
+}
+
+.timestamps {
+  color: $secondary;
+  font-size: 12px;
+  display: flex;
+
+  p {
+    margin-left: 15px;
+  }
+}

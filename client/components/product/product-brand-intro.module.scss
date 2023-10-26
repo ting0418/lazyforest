@@ -1,0 +1,46 @@
+.brandCard {
+  border: 0;
+  //   border-radius: 20px;
+  box-shadow: 0px 0px 10px #3e3b3530;
+}
+
+.brandTextContainer {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @media (max-width: 768px) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+.brandImgContainer {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #fefff6;
+  border-right: 7px solid #d1ef1a;
+  @media (max-width: 768px) {
+    border-right: 0;
+    border-bottom: 7px solid #d1ef1a;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+.brandImg {
+  object-fit: contain;
+  height: 100%;
+}
+
+.cardTitle {
+  color: #fefff6;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans';
+}
+.cardText {
+  color: #8e8777;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 300;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}

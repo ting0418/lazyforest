@@ -1,0 +1,136 @@
+.calendar {
+  background-color: #8e8777;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+.calendar .year {
+  font-size: 18px;
+  color: #fefff6;
+  display: flex;
+  justify-content: center;
+}
+.calendar .month {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.calendar .month button {
+  background-color: transparent;
+  border: 0;
+  height: 18px;
+  color: #d1ef1a;
+}
+.calendar .month .monthNames {
+  color: #fefff6;
+  font-size: 18px;
+}
+.calendar .calendarTable {
+  margin-top: 40px;
+  cursor: pointer;
+}
+.calendar .calendarTable tr {
+  color: #d1ef1a;
+  text-align: center;
+  padding: 16px;
+}
+.calendar .calendarTable td {
+  font-size: 15px;
+  text-align: center;
+  color: #fefff6;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.calendar .calendarTable td.today {
+  color: #d1ef1a;
+}
+.calendar .calendarTable td.selectedStartDate {
+  background-color: #d1ef1a;
+  color: #3e3b35;
+  border-radius: 50% 0 0 50%;
+}
+.calendar .calendarTable td.inDateRange {
+  background-color: #d1ef1a;
+  color: #3e3b35;
+  border-radius: 0;
+}
+.calendar .calendarTable td.selectedEndDate {
+  background-color: #d1ef1a;
+  color: #3e3b35;
+  border-radius: 0 50% 50% 0;
+}
+.calendar .calendarTable td:hover {
+  background-color: #a1b719;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .calendar {
+    background-color: #8e8777;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: -30px;
+  }
+  .calendar .year {
+    font-size: 18px;
+    color: #fefff6;
+    display: flex;
+    justify-content: center;
+  }
+  .calendar .month {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  .calendar .month button {
+    background-color: transparent;
+    border: 0;
+    height: 16px;
+    color: #d1ef1a;
+  }
+  .calendar .month .monthNames {
+    color: #fefff6;
+    font-size: 16px;
+  }
+  .calendar .calendarTable {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .calendar .calendarTable tr {
+    font-size: 10px;
+  }
+  .calendar .calendarTable td {
+    font-size: 10px;
+    text-align: center;
+    color: #fefff6;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .calendar .calendarTable td.today {
+    color: #d1ef1a;
+  }
+  .calendar .calendarTable td.selectedStartDate {
+    background-color: #d1ef1a;
+    color: #3e3b35;
+    border-radius: 50% 0 0 50%;
+  }
+  .calendar .calendarTable td.inDateRange {
+    background-color: #d1ef1a;
+    color: #3e3b35;
+    border-radius: 0;
+  }
+  .calendar .calendarTable td.selectedEndDate {
+    background-color: #d1ef1a;
+    color: #3e3b35;
+    border-radius: 0 50% 50% 0;
+  }
+  .calendar .calendarTable td:hover {
+    background-color: #a1b719;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=Calendar.module.css.map */

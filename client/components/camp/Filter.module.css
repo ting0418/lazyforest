@@ -1,0 +1,128 @@
+/* nav-bar.module.scss */
+.navbar {
+  border-top: 1px #8e8777 solid;
+  display: flex;
+  width: 100%;
+  height: 73px;
+  background-color: #3e3b35;
+  padding-left: 123px;
+  padding-top: 18px;
+}
+.navbar .itemContainer {
+  width: 150px;
+}
+.navbar .navItem {
+  padding: 13px 50px;
+  color: #fefff6;
+  font-size: 24px;
+  position: relative;
+  margin-top: -3px;
+}
+.navbar .navItem::before {
+  content: "";
+  right: 0;
+  width: 1px;
+  height: 39px;
+  background-color: #8e8777;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar .navItem:hover, .navbar .navItem.active {
+  margin-top: -18px;
+  background-color: #fefff6;
+  color: #3e3b35;
+  border-top: 8px solid #d1ef1a;
+  line-height: 40px;
+}
+.navbar .navItem:hover::before, .navbar .navItem.active::before {
+  background-color: transparent;
+}
+.navbar .buttonContainer {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+.navbar .myButton {
+  font-size: 24px;
+  background-color: transparent;
+  color: #3e3b35;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.navbar .selectedButton {
+  background-color: transparent;
+  color: #a1b719;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .navbar {
+    display: flex;
+    width: 390px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 18px;
+  }
+  .navbar .itemContainer {
+    width: 70px;
+  }
+  .navbar .navItemWrapper {
+    width: 70px;
+  }
+  .navbar .navItem {
+    padding: 0px 0px;
+    color: #fefff6;
+    font-size: 14px;
+    position: relative;
+    margin-top: -4px;
+    text-align: center;
+  }
+  .navbar .navItem::before {
+    content: "";
+    right: 0;
+    width: 1px;
+    height: 25px;
+    background-color: #8e8777;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navbar .navItem:hover, .navbar .navItem.active {
+    border-top: 4px solid #d1ef1a;
+    line-height: 36px;
+    padding-right: -20px;
+  }
+  .navbar .navItem:hover::before, .navbar .navItem.active::before {
+    background-color: transparent;
+  }
+  .navbar .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+    max-height: 80px;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .navbar .myButton {
+    font-size: 14px;
+    background-color: transparent;
+    color: #3e3b35;
+    padding: 0px 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar .selectedButton {
+    background-color: transparent;
+    color: #a1b719;
+    padding: 0px 4px;
+    border: none;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=Filter.module.css.map */

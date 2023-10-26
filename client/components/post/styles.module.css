@@ -1,0 +1,17 @@
+.custom-textarea-container {
+    position: relative;
+  }
+  
+  .custom-textarea {
+    border: none;
+    padding: 10px;
+    resize: none;
+  }
+  
+  .custom-textarea-container .d-flex {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  

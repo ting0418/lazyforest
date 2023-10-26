@@ -1,0 +1,254 @@
+@charset "UTF-8";
+.forumTitle {
+  font-family: "din-condensed";
+  margin-left: 215px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .forumTitle {
+    margin-left: 30px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+@media (max-width: 768px) {
+  .swiper {
+    height: 80px;
+  }
+}
+
+.nestedMenu {
+  padding-left: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #3e3b35;
+  color: white;
+}
+@media (max-width: 768px) {
+  .nestedMenu {
+    padding-left: 0px;
+    position: relative;
+  }
+}
+.nestedMenu .menuItem {
+  cursor: pointer;
+  padding-block: 10px;
+  border-top: 4px solid transparent;
+}
+.nestedMenu .menuItem.active {
+  color: #3e3b35;
+  background: #fefff6;
+  border-top: 4px solid #d1ef1a;
+}
+@media (min-width: 768px) {
+  .nestedMenu .menuItem {
+    position: relative;
+  }
+}
+.nestedMenu .menuItem .menuItemLabel {
+  padding-inline: 20px;
+  padding-block: 6px;
+  border-right: 0.5px solid #eee;
+}
+@media (max-width: 768px) {
+  .nestedMenu .menuItem .menuItemLabel {
+    padding-inline: 14px;
+  }
+}
+.nestedMenu .menuItem:hover {
+  color: #3e3b35;
+  background: #fefff6;
+  border-top: 4px solid #d1ef1a;
+}
+
+.all {
+  background: #fefff6;
+  display: flex;
+  justify-content: center;
+}
+.all p {
+  margin-bottom: 0;
+}
+.all .asideRight {
+  margin-inline: 224px;
+}
+.all .asideRight .buttonPost {
+  margin-top: 89px;
+  margin-bottom: 62px;
+  width: 1199px;
+}
+.all .asideRight .list {
+  overflow-y: hidden;
+  width: 1199px;
+  height: 463px;
+  border: 1px solid black;
+}
+.all .asideRight .list .content {
+  padding-inline: 60px;
+  padding-block: 30px;
+}
+.all .asideRight .list .content .userInfo {
+  color: var(--dark, #3e3b35);
+  margin-bottom: 32px;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .all .asideRight .list .content .userInfo {
+    display: block;
+  }
+}
+.all .asideRight .list .content .userInfo .date {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.all .asideRight .list .content .userInfo .userId {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.all .asideRight .list .content .userInfo .type {
+  font-size: 20px;
+}
+.all .asideRight .list .content .title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.all .asideRight .list .content .allInfo {
+  display: flex;
+}
+.all .asideRight .list .content .allInfo .comments {
+  margin-right: 73px;
+}
+.all .asideRight .list .content .allInfo .comments .contentText {
+  padding-top: 33px;
+  width: 763px;
+  line-height: 32px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire {
+  padding-top: 32px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire .fires {
+  margin-right: 32px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire .fires .fire {
+  width: 28px;
+  height: 32px;
+  color: #a1b719;
+  margin-right: 17px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire .fires .fireCount {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire .comment {
+  width: 28px;
+  height: 32px;
+  color: #a1b719;
+  margin-right: 17px;
+}
+.all .asideRight .list .content .allInfo .comments .commentAndFire .commentCount {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media (max-width: 390px) {
+  .all {
+    display: flex;
+    padding-top: 30px;
+    padding-inline: 45px;
+  }
+  .all .asideRight {
+    margin-inline: 0;
+  }
+  .all .asideRight .buttonPost {
+    margin-top: 30px;
+    margin-bottom: 34px;
+    width: 300px;
+  }
+  .all .asideRight .list {
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+  }
+  .all .asideRight .list .content {
+    padding-inline: 30px;
+    padding-block: 36px;
+  }
+  .all .asideRight .list .content .userInfo {
+    color: var(--dark, #3e3b35);
+    margin-bottom: 20px;
+  }
+  .all .asideRight .list .content .userInfo .date {
+    font-size: 14px;
+  }
+  .all .asideRight .list .content .userInfo .userId {
+    font-size: 14px;
+  }
+  .all .asideRight .list .content .userInfo .type {
+    font-size: 14px;
+  }
+  .all .asideRight .list .content .title {
+    white-space: nowrap; /* 不要換行 */
+    overflow: hidden; /* 隱藏超出的文字 */
+    text-overflow: ellipsis; /* 顯示省略 (...) */
+    margin-bottom: 17px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .all .asideRight .list .content .allInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .all .asideRight .list .content .allInfo .comments {
+    order: 2;
+    margin-right: 0;
+  }
+  .all .asideRight .list .content .allInfo .comments .contentText {
+    width: 240px;
+    font-size: 14px;
+    padding-top: 0;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire {
+    padding-top: 32px;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire .fires {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire .fires .fire {
+    width: 15px;
+    height: 15px;
+    color: #a1b719;
+    margin-right: 17px;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire .fires .fireCount {
+    font-size: 14px;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire .comment {
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    color: #a1b719;
+    margin-right: 17px;
+  }
+  .all .asideRight .list .content .allInfo .comments .commentAndFire .commentCount {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .all .asideRight .list .content .allInfo .camp1 {
+    border-radius: 8px;
+    order: 1;
+    width: 240px;
+    height: 152px;
+    margin-bottom: 25px;
+  }
+}/*# sourceMappingURL=post-list.module.css.map */

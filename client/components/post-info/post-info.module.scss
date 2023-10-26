@@ -1,0 +1,450 @@
+$themeTextColor: var(--dark, #3e3b35);
+.nestedMenu {
+  padding-left: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #3e3b35;
+  color: white;
+  @media (max-width: 768px) {
+    padding-left: 0px;
+    position: relative;
+  }
+  .menuItem {
+    // position: relative;
+    cursor: pointer;
+    padding-block: 10px;
+    border-top: 4px solid transparent;
+    @media (max-width: 768px) {
+      position: relative;
+    }
+    .menuItemLabel {
+      padding-inline: 20px;
+      padding-block: 6px;
+      border-right: 0.5px solid #eee;
+      @media (max-width: 768px) {
+        padding-inline: 14px;
+      }
+    }
+  }
+  .menuItem:hover {
+    color: #3e3b35;
+    background: #fefff6;
+    border-top: 4px solid #d1ef1a;
+  }
+}
+.all {
+  justify-content: center;
+  background: #fefff6;
+  display: flex;
+  p {
+    margin-bottom: 0;
+  }
+  // .asideLeft {
+  //   width: 275px;
+  //   background: #a1b719;
+  // }
+
+  .asideRight {
+    // width: 1645px;
+    margin-inline: 320px;
+    // margin: auto;
+
+    .info {
+      padding-top: 25px;
+      @media (max-width: 390px) {
+        margin-top: 30px;
+        padding-top: 0;
+      }
+      .userInfo {
+        margin-bottom: 56px;
+        .userImage {
+          border-radius: 50%;
+        }
+        .userId {
+          // padding-left: 9px;
+          padding-right: 22px;
+          font-size: 20px;
+          color: $themeTextColor;
+        }
+        .date {
+          font-size: 20px;
+          color: $themeTextColor;
+        }
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        // width: 260px;
+        margin-bottom: 56px;
+        color: $themeTextColor;
+      }
+      .contentMain {
+        padding-top: 33px;
+        width: 977px;
+        margin-bottom: 20px;
+        color: $themeTextColor;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .post_1 {
+        margin-bottom: 20px;
+      }
+      .post_2 {
+        margin-bottom: 20px;
+      }
+      .post_3 {
+        margin-bottom: 20px;
+      }
+      // .content {
+      //   padding-top: 15px;
+      //   width: 977px;
+      //   margin-bottom: 20px;
+      //   color: $themeTextColor;
+      //   font-size: 20px;
+      //   font-weight: 400;
+      // }
+    }
+    .tags {
+      padding-top: 15px;
+      display: flex;
+      .tag {
+        // width: 56px;
+        height: 31px;
+        padding-block: 5px;
+        padding-inline: 13px;
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 15px;
+      }
+    }
+    .commentAndFire {
+      margin-top: 32px;
+      margin-bottom: 50px;
+      .fires {
+        margin-right: 32px;
+        .fire {
+          width: 28px;
+          height: 32px;
+          color: #a1b719;
+          // margin-right: 17px;
+        }
+        .fireIconActive {
+          width: 28px;
+          height: 32px;
+          color: red;
+          // margin-right: 17px;
+        }
+        .fire:hover {
+          color: #d1ef1a;
+        }
+        .fireCount {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+        }
+        .fireCountActive {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+        }
+      }
+      .comments {
+        display: flex;
+        align-items: center;
+        .comment {
+          width: 28px;
+          height: 32px;
+          color: #a1b719;
+          margin-right: 17px;
+        }
+        .commentCount {
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .edit {
+        width: 32px;
+        height: 32px;
+        color: #d1ef1a;
+      }
+    }
+    .messageInput {
+      width: 977px;
+      border: 1px solid #a1b719;
+      .userMessageInfo {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 18px;
+        .userCommentImage {
+          border-radius: 50%;
+        }
+        .userMessageId {
+          padding-right: 22px;
+          font-size: 20px;
+          color: var(--dark, #3e3b35);
+        }
+        .messageDate {
+          font-size: 20px;
+          color: var(--dark, #3e3b35);
+        }
+      }
+
+      .postMessage {
+        width: 93px;
+        background: #a1b719;
+        color: white;
+        margin-inline: 20px;
+        margin-block: 18px;
+      }
+    }
+    .totalMessage {
+      width: 977px;
+      margin-top: 51px;
+      font-size: 20px;
+      color: var(--dark, #3e3b35);
+      border-bottom: 1px solid $themeTextColor;
+    }
+
+    .userMessageTextInfo {
+      margin-top: 22px;
+      margin-bottom: 36px;
+      align-items: center;
+      .user {
+        border-radius: 50%;
+      }
+      .userMessageTextId {
+        // padding-right: 22px;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--dark, #3e3b35);
+      }
+    }
+    .contentText {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 29px;
+      color: var(--dark, #3e3b35);
+    }
+    .messageTextDate {
+      width: 977px;
+      font-size: 20px;
+      color: var(--dark, #3e3b35);
+      font-weight: 400;
+      border-bottom: 1px solid #a1b719;
+    }
+  }
+}
+
+// 手機板
+@media (max-width: 390px) {
+  .all {
+    justify-content: center;
+    .asideLeft {
+      display: none;
+    }
+    .asideRight {
+      // margin-inline: 0;
+      padding-top: 100px;
+      padding-inline: 26px;
+      // width: 260px;
+
+      .info {
+        .userInfo {
+          align-items: center;
+          margin-bottom: 24px;
+          .userImage {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+          }
+          .userId {
+            font-size: 14px;
+            color: var(--dark, #3e3b35);
+          }
+          .date {
+            font-size: 14px;
+            color: var(--dark, #3e3b35);
+          }
+          .type {
+            font-size: 14px;
+          }
+        }
+        .title {
+          width: 260px;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 16px;
+          color: var(--dark, #3e3b35);
+        }
+        .contentMain {
+          padding-top: 16px;
+          width: 260px;
+          margin-bottom: 10px;
+          color: var(--dark, #3e3b35);
+          font-size: 14px;
+          font-weight: 400;
+          // font-family:"IBM Plex Sans";
+        }
+        .content {
+          width: 260px;
+          margin-bottom: 10px;
+          color: var(--dark, #3e3b35);
+          font-size: 14px;
+          font-weight: 400;
+          // font-family:"IBM Plex Sans";
+        }
+        .post_1 {
+          width: 260px;
+          height: 175px;
+          margin-bottom: 20px;
+        }
+        .post_2 {
+          width: 260px;
+          height: 175px;
+          margin-bottom: 20px;
+        }
+        .post_3 {
+          width: 260px;
+          height: 175px;
+          margin-bottom: 20px;
+        }
+      }
+      .tags {
+        display: flex;
+        // width: 260px;
+        .tag {
+          // width: 32px;
+          height: 18px;
+          padding-block: 0px;
+          padding-inline: 6px;
+          font-size: 10px;
+          font-weight: 400;
+          margin-right: 7px;
+        }
+      }
+      .commentAndFire {
+        display: flex;
+        // width: 260px;
+        align-items: center;
+        padding-top: 22px;
+        margin-bottom: 50px;
+        .fires {
+          margin-right: 32px;
+          .fire {
+            width: 15px;
+            height: 15px;
+            color: #a1b719;
+            display: flex;
+            align-items: center;
+          }
+          .fireIconActive {
+            width: 15px;
+            height: 15px;
+            color: red;
+            display: flex;
+            align-items: center;
+          }
+          .fireCount {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
+          .fireCountActive {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .comments {
+          display: flex;
+          align-items: center;
+          .comment {
+            width: 15px;
+            height: 15px;
+            color: #a1b719;
+            margin-right: 10px;
+          }
+          .commentCount {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
+        }
+        // .edit {
+        //   width: 14px;
+        //   height: 14px;
+        // }
+      }
+      .messageInput {
+        width: 260px;
+        border: 1px solid #a1b719;
+        .userMessageInfo {
+          padding-top: 18px;
+          padding-left: 15px;
+          padding-bottom: 18px;
+          .userCommentImage {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+          .userMessageId {
+            font-size: 14px;
+            color: var(--dark, #3e3b35);
+          }
+          .messageDate {
+            font-size: 14px;
+            color: var(--dark, #3e3b35);
+          }
+        }
+
+        .postMessage {
+          width: 76px;
+          background: #a1b719;
+          color: white;
+          margin-inline: 20px;
+          margin-block: 18px;
+          border-radius: 5px;
+          font-size: 12px;
+        }
+      }
+      .totalMessage {
+        width: 260px;
+        margin-top: 29px;
+        font-size: 14px;
+        color: var(--dark, #3e3b35);
+        border-bottom: 1px solid $themeTextColor;
+      }
+
+      .userMessageTextInfo {
+        margin-top: 15px;
+        margin-bottom: 12px;
+        align-items: center;
+        .user {
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+        }
+        .userMessageTextId {
+          font-size: 14px;
+          font-weight: 400;
+          color: var(--dark, #3e3b35);
+        }
+      }
+      .contentText {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 29px;
+        color: var(--dark, #3e3b35);
+      }
+      .messageTextDate {
+        max-width: 260px;
+        font-size: 12px;
+        color: var(--dark, #3e3b35);
+        font-weight: 400;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #a1b719;
+      }
+    }
+  }
+}

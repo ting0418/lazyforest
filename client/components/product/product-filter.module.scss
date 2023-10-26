@@ -1,0 +1,136 @@
+.menu {
+  position: relative;
+}
+
+.subMenu {
+  width: 400px;
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0;
+  z-index: 1000;
+  background-color: #fefff6;
+  box-shadow: 0px 0px 10px #3e3b3530;
+  border-radius: 8px;
+  padding: 30px;
+  @media (max-width: 768px) {
+    width: 280px;
+    // right: -50px;
+  }
+}
+
+// 搜尋
+.searchBar {
+  background-color: #fefff6;
+  border: 2px solid #8e8777;
+  position: relative;
+}
+.searchBar:focus {
+  background-color: #fefff6;
+  border: 2px solid #8e8777;
+}
+
+.searchBar::placeholder {
+  color: #8e8777;
+}
+
+.searchBtn {
+  position: absolute;
+  right: 10px;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #8e8777;
+  border-radius: 2px;
+}
+
+//進階選項按鈕
+.btnAdSearch,
+.btnSort {
+  border: 0;
+  border-radius: 8px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  background: #8e8777;
+  color: #fefff6;
+}
+.sortIcon {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.maxPrice {
+  font-size: 30px;
+  font-family: 'din-condensed';
+}
+.priceRange {
+  // -webkit-appearance: none;
+  overflow: hidden; /* 限定範圍 */
+  width: 100%;
+  height: 30px;
+  outline: none; /* 避免點選會有藍線或虛線 */
+  background: none;
+  background: #eee;
+  accent-color: #d1ef1a;
+}
+.priceBox {
+  border-bottom: 0.5px solid #3e3b35;
+}
+
+// .btnSelect {
+//   color: #eee;
+//   background-color: #8e8777;
+//   border-radius: 5px;
+//   text-align: center;
+//   border: transparent;
+// }
+
+.btnSecondary {
+  border: 0;
+  border-radius: 5px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  color: #fefff6;
+  background-color: #8e8777;
+}
+
+.active {
+  color: #eee;
+  background-color: #a1b719;
+  border-radius: 5px;
+  text-align: center;
+  border: transparent;
+}
+.btnSearch {
+  border: 0;
+  border-radius: 5px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  color: #fefff6;
+  background-color: #d1ef1a;
+}
+
+.sortMenu {
+  position: relative;
+}
+.sortSubMenu {
+  width: 180px;
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0;
+  z-index: 1000;
+  background-color: #fefff6;
+  box-shadow: 0px 0px 10px #8e8777;
+  border-radius: 8px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  text-align: center;
+}
+
+.sortsItem {
+  padding-block: 10px;
+  border-bottom: 0.5px solid #3e3b35;
+}
+.sortsItem2 {
+  padding-top: 10px;
+}

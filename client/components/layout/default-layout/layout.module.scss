@@ -1,0 +1,29 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mainContent {
+  flex: 1;
+  width: calc(100% - 274px);
+  // width: 100vw;
+  margin-left: 274px;
+  // margin-bottom: 440px;
+}
+@media (max-width: 768px) {
+  .mainContent {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.myFooter {
+  // margin-top: 440px;
+  position: absolute;
+}
+
+// .backtoTopText{
+//   color: antiquewhite;
+// transform: translateX(50px);
+//   vertical-align: text-bottom;
+// }

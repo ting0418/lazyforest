@@ -1,0 +1,251 @@
+$themeTextColor: var(--dark, #3e3b35);
+$themeTextColor: var(--dark, #3e3b35);
+.forumTitle {
+  font-family: 'din-condensed';
+  margin-left: 215px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    margin-left: 30px;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  // border: 0;
+  @media (max-width: 768px) {
+    height: 80px;
+  }
+}
+.nestedMenu {
+  padding-left: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #3e3b35;
+  color: white;
+  @media (max-width: 768px) {
+    padding-left: 0px;
+    position: relative;
+  }
+  .menuItem {
+    // position: relative;
+    cursor: pointer;
+    padding-block: 10px;
+    border-top: 4px solid transparent;
+    &.active {
+      color: #3e3b35;
+      background: #fefff6;
+      border-top: 4px solid #d1ef1a;
+    }
+    @media (min-width: 768px) {
+      position: relative;
+    }
+    .menuItemLabel {
+      padding-inline: 20px;
+      padding-block: 6px;
+      border-right: 0.5px solid #eee;
+      @media (max-width: 768px) {
+        padding-inline: 14px;
+      }
+    }
+  }
+  .menuItem:hover {
+    color: #3e3b35;
+    background: #fefff6;
+    border-top: 4px solid #d1ef1a;
+  }
+}
+.all {
+  background: #fefff6;
+  display: flex;
+  justify-content: center;
+  p {
+    margin-bottom: 0;
+  }
+
+  .asideRight {
+    margin-inline: 224px;
+    .buttonPost {
+      margin-top: 89px;
+      margin-bottom: 62px;
+      width: 1199px;
+    }
+
+    .list {
+      overflow-y: hidden;
+      width: 1199px;
+      height: 463px;
+      border: 1px solid black;
+      .content {
+        padding-inline: 60px;
+        // 原本66
+        padding-block: 30px;
+        .userInfo {
+          color: $themeTextColor;
+          margin-bottom: 32px;
+          display: flex;
+          @media (max-width: 768px) {
+            display: block;
+          }
+          .date {
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+          .userId {
+            font-size: 20px;
+            // padding-left: 9px;
+            padding-right: 10px;
+          }
+          .type {
+            font-size: 20px;
+          }
+        }
+        .title {
+          font-size: 36px;
+          font-weight: 700;
+          // 10/20新增
+          margin-top: 20px;
+        }
+        .allInfo {
+          display: flex;
+          .comments {
+            margin-right: 73px;
+
+            .contentText {
+              padding-top: 33px;
+              width: 763px;
+              line-height: 32px;
+            }
+            .commentAndFire {
+              padding-top: 32px;
+              .fires {
+                margin-right: 32px;
+                .fire {
+                  width: 28px;
+                  height: 32px;
+                  color: #a1b719;
+                  margin-right: 17px;
+                }
+                .fireCount {
+                  display: flex;
+                  align-items: center;
+                  font-size: 20px;
+                }
+              }
+              .comment {
+                width: 28px;
+                height: 32px;
+                color: #a1b719;
+                margin-right: 17px;
+              }
+              .commentCount {
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .all {
+    display: flex;
+    padding-top: 30px;
+    padding-inline: 45px;
+
+    .asideRight {
+      margin-inline: 0;
+      .buttonPost {
+        margin-top: 30px;
+        margin-bottom: 34px;
+        width: 300px;
+      }
+      .list {
+        width: 300px;
+        height: auto;
+        border: 1px solid black;
+        .content {
+          padding-inline: 30px;
+          padding-block: 36px;
+          .userInfo {
+            color: $themeTextColor;
+            margin-bottom: 20px;
+            .date {
+              font-size: 14px;
+            }
+            .userId {
+              font-size: 14px;
+            }
+            .type {
+              font-size: 14px;
+            }
+          }
+          .title {
+            white-space: nowrap; /* 不要換行 */
+            overflow: hidden; /* 隱藏超出的文字 */
+            text-overflow: ellipsis; /* 顯示省略 (...) */
+            margin-bottom: 17px;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          .allInfo {
+            display: flex;
+            flex-direction: column;
+
+            .comments {
+              order: 2;
+              margin-right: 0;
+
+              .contentText {
+                width: 240px;
+                font-size: 14px;
+                padding-top: 0;
+              }
+
+              .commentAndFire {
+                padding-top: 32px;
+                .fires {
+                  display: flex;
+                  align-items: center;
+                  margin-right: 32px;
+                  .fire {
+                    width: 15px;
+                    height: 15px;
+                    color: #a1b719;
+                    margin-right: 17px;
+                  }
+                  .fireCount {
+                    font-size: 14px;
+                  }
+                }
+                .comment {
+                  display: flex;
+                  align-items: center;
+                  width: 15px;
+                  height: 15px;
+                  color: #a1b719;
+                  margin-right: 17px;
+                }
+                .commentCount {
+                  display: flex;
+                  align-items: center;
+                  font-size: 14px;
+                }
+              }
+            }
+            .camp1 {
+              border-radius: 8px;
+              order: 1;
+              width: 240px;
+              height: 152px;
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

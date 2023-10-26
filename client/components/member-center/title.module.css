@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* adobe din-condensed */
+@import url("https://use.typekit.net/fna5zqs.css");
+.title_wrap {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.title_wrap .title {
+  color: #3e3b35;
+  font-size: 64px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.title_wrap .text_din,
+.title_wrap .span {
+  font-family: "din-condensed", Helvetica;
+  font-weight: 700;
+}
+.title_wrap .text_ibm {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+}/*# sourceMappingURL=title.module.css.map */

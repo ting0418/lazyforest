@@ -1,0 +1,179 @@
+@charset "UTF-8";
+.card {
+  width: 500px;
+  height: 518px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #3e3b35;
+  position: relative;
+}
+.card h2 {
+  padding-top: 40px;
+  padding-left: 30px;
+  font-size: 28px;
+  color: #fefff6;
+}
+.card p {
+  font-size: 22px;
+  padding-top: 20px;
+  padding-left: 30px;
+  color: #fefff6;
+}
+.card .imageWrapper {
+  position: relative;
+}
+.card .image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .rectangle {
+  width: 100%;
+  height: 8px;
+  background-color: #d1ef1a;
+  position: absolute;
+}
+.card .icons {
+  display: flex;
+  color: #d1ef1a;
+  margin-left: 33px;
+  padding-top: 102px;
+}
+.card .icons .icon {
+  font-size: 22px;
+  margin-right: 12px; /* 添加15px的右侧间隔 */
+}
+.card .stars {
+  color: #fefff6;
+  font-size: 22px;
+  width: 103px;
+  display: flex;
+  margin-top: -107px;
+  margin-left: 352px;
+}
+.card .viewMoreWrapper {
+  position: relative;
+  right: 10px;
+  top: -33px;
+}
+.card .viewMoreWrapper .viewMore {
+  color: #fefff6;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+.card .viewMoreWrapper .viewMore .arrow {
+  width: 20px;
+  height: 20px;
+  color: #d1ef1a;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 335px;
+    height: 248px;
+    position: relative;
+  }
+  .card h2 {
+    padding-top: 12px;
+    padding-left: 25px;
+    font-size: 13px;
+    color: #fefff6;
+  }
+  .card p {
+    font-size: 11px;
+    padding-top: 0px;
+    padding-left: 25px;
+    color: #fefff6;
+  }
+  .card .imageWrapper {
+    position: relative;
+  }
+  .card .image {
+    width: 100%;
+    height: 155px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card .rectangle {
+    height: 4px;
+  }
+  .card .icons {
+    color: #d1ef1a;
+    width: 12px;
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .card .stars {
+    width: 70px;
+    display: flex;
+    margin-top: -56px;
+    margin-left: 242px;
+  }
+  .card .viewMoreWrapper {
+    position: relative;
+    right: 10px;
+    top: -25px;
+  }
+  .card .viewMoreWrapper .viewMore {
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .card .viewMoreWrapper .viewMore .arrow {
+    width: 15px;
+    color: #d1ef1a;
+    margin-left: 5px;
+    margin-bottom: 2.5px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #3e3b35;
+    position: relative;
+  }
+  .card .imageWrapper {
+    position: relative;
+  }
+  .card .icons {
+    display: flex;
+    color: #d1ef1a;
+    margin-left: 27px;
+    padding-top: 10px;
+  }
+  .card .icons .icon {
+    font-size: 13px;
+    margin-right: 12px; /* 添加15px的右侧间隔 */
+  }
+  .card .stars {
+    color: #fefff6;
+    font-size: 10px;
+    width: 50px;
+    display: flex;
+    margin-top: -53px;
+    margin-left: 260px;
+  }
+  .card .viewMoreWrapper {
+    position: relative;
+    right: 10px;
+    top: -23px;
+  }
+  .card .viewMoreWrapper .viewMore {
+    color: #fefff6;
+    background: transparent;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .card .viewMoreWrapper .viewMore .arrow {
+    width: 12px;
+    height: 12px;
+    color: #d1ef1a;
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=Card.module.css.map */

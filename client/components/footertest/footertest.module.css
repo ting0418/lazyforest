@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.back {
+  writing-mode: vertical-lr; /* 使文字垂直 */
+  transform: rotate(180deg); /* 旋轉180度使文字正確的朝向 */
+}/*# sourceMappingURL=footertest.module.css.map */

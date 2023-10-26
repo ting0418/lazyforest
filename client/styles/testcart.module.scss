@@ -1,0 +1,206 @@
+$primary: #d1ef1a;
+$secondary: #8e8777;
+$brown: #7eb4e6;
+$danger: #ff4136;
+$dark: #3e3b35;
+$light: #fefff6;
+$main: #d1ef1a;
+$highlight: #a1b719;
+.finishheight {
+  @media (max-width: 576px) {
+    height: 465px;
+  }
+}
+.mobilelogin {
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+.mobilecheckoutend {
+  @media (max-width: 576px) {
+    font-size: 14px;
+    padding-inline: 5px;
+    margin-block: 5px;
+  }
+}
+.mobileaddress {
+  @media (max-width: 576px) {
+    font-size: 14px;
+    margin-block: 5px;
+    // padding-right: ;
+  }
+}
+.cindytitle {
+  font-family: 'din-condensed';
+  // padding-left: 50px;
+  // padding-top: 60px;
+  // padding-bottom: 20px;
+  margin-bottom: 50px;
+  @media (max-width: 576px) {
+    padding-left: 30px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 576px) {
+  // 768px 只是一個例子，您可以根據需要調整
+  .mobileflexcolumn {
+    flex-direction: column !important;
+  }
+}
+.seven {
+  width: 350px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: 130px;
+}
+.search {
+  // bg-primary border-primary rounded border-1
+  background: $primary;
+  border: solid 1px $primary;
+  // border-radius: 50%;
+  width: 350px;
+  height: 35px;
+  @media (max-width: 576px) {
+    width: 250px;
+  }
+}
+.eleven {
+  width: 500px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: 60px;
+  @media (max-width: 576px) {
+    width: 350px;
+    height: 300px;
+  }
+}
+.addresslength {
+  width: 300px;
+}
+
+.circlescontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+
+  .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: $secondary;
+  }
+}
+
+.title {
+  height: 50px; // 桌機預設高度
+  font-size: 20px;
+  padding-left: 50px;
+  @media (max-width: 576px) {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+}
+
+.testcarttitle {
+  height: 50px; // 桌機預設高度
+  font-size: 20px;
+  padding-left: 50px;
+  @media (max-width: 576px) {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+    // display: none;
+  }
+}
+
+.checkouttitle {
+  height: 50px; // 桌機預設高度
+  font-size: 20px;
+  padding-left: 50px;
+  @media (max-width: 576px) {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  @media (max-width: 576px) {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+.selectsize {
+  width: 540px;
+  @media (max-width: 576px) {
+    width: 280px;
+  }
+}
+
+.citysize {
+  width: 550px;
+  height: 45px;
+  @media (max-width: 576px) {
+    width: 280px;
+    // margin-top: 8px;
+  }
+}
+
+.checkoutsize {
+  width: 550px;
+  height: 45px;
+  @media (max-width: 576px) {
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+.checkoutsize2 {
+  width: 1170px;
+  height: 45px;
+  margin-bottom: 20px;
+  @media (max-width: 576px) {
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+.product {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.mobilead {
+  width: 160px;
+  font-size: 16px;
+  text-align: center;
+  margin-block: 5px;
+}
+.mobilecartfs {
+  font-size: 12px;
+}
+
+// .error-message {
+//   height: 20px; /* 根據你的設計需求調整 */
+//   line-height: 20px;
+//   color: red;
+//   opacity: 0;
+//   transition: opacity 0.3s ease;
+// }
+
+// .error-message.active {
+//   opacity: 1;
+// }
+.invalidinput::placeholder {
+  color: red;
+}

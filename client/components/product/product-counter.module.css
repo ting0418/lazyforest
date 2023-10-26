@@ -1,0 +1,19 @@
+.countNumber {
+  background: rgba(142, 135, 119, 0.4392156863);
+  color: #3e3b35;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plusBtn {
+  background: #8e8777;
+  color: #3e3b35;
+}
+
+.minusBtn {
+  background: rgba(142, 135, 119, 0.5843137255);
+  color: #3e3b35;
+}/*# sourceMappingURL=product-counter.module.css.map */

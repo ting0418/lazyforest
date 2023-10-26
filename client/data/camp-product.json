@@ -1,0 +1,192 @@
+[
+  {
+    "product_id": 108,
+    "product_name": "加長客廳帳Pro 象牙白",
+    "product_img": "/images/products/tent1.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 12900,
+    "product_amount": 50,
+    "product_discount": 0.7,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 109,
+    "product_name": "加長型客廳帳Pro",
+    "product_img": "/images/products/tent2.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 19800,
+    "product_amount": 50,
+    "product_discount": 0.6,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 3,
+    "product_name": "LOGOS山形屋帳",
+    "product_img": "/images/products/logostent3.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 11700,
+    "product_amount": 50,
+    "product_discount": 1,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 111,
+    "product_name": "格蘭伯格帳",
+    "product_img": "/images/products/tent4.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 23900,
+    "product_amount": 50,
+    "product_discount": 0.4,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 112,
+    "product_name": "別墅帳象牙白",
+    "product_img": "/images/products/tent5.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 23000,
+    "product_amount": 50,
+    "product_discount": 1,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 113,
+    "product_name": "Dock Dome 寢室帳",
+    "product_img": "/images/products/tent6.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 23900,
+    "product_amount": 50,
+    "product_discount": 0.7,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 114,
+    "product_name": "Landbreeze寢室帳 Pro.3 (SD-643))",
+    "product_img": "/images/products/tent7.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 11600,
+    "product_amount": 50,
+    "product_discount": 0.9,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 115,
+    "product_name": "FAL 2 登山帳 Pro.air (SSD-702)",
+    "product_img": "/images/products/tent8.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 18300,
+    "product_amount": 50,
+    "product_discount": 0.9,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 116,
+    "product_name": "TOYA 2 野餐帳 (SD-180)",
+    "product_img": "/images/products/tent9.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 11900,
+    "product_amount": 50,
+    "product_discount": 1,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  },
+  {
+    "product_id": 117,
+    "product_name": "Amenity天幕組 (TP-851SR)",
+    "product_img": "/images/products/tent10.jpeg",
+    "product_introduce": "Feature特色All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+    "product_spec": {
+      "材質": "All-In-One型式的大型別墅帳，不吊掛內帳時也可以當作集會室使用，對稱的營柱設計不僅容易搭設，以營繩固定後可確保帳篷各面向均勻受力，結實穩定的住紮在營地上。",
+      "套裝內容": "本體、脊柱、A型營柱x2、C型營柱x2、帳篷營柱x1、前庭營柱190x2、鋁質營釘21cmx26、附調節片營繩3.5mx4、7mx2、2mx4、SEAM GRIP防水膠、營釘收納袋、營柱攜行袋、帳篷攜行袋",
+      "尺寸": "80x28x30hcm",
+      "使用人數": "6名"
+    },
+    "product_price": 9700,
+    "product_amount": 50,
+    "product_discount": 0.85,
+    "category_id": 2,
+    "created_at": "2023-08-10",
+    "updated_at": "2023-08-20",
+    "Valid": 1
+  }
+]

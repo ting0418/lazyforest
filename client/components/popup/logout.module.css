@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* adobe din-condensed */
+@import url("https://use.typekit.net/fna5zqs.css");
+.btn {
+  width: 137px;
+  height: 51px;
+  background-color: #8e8777;
+  color: #fefff6;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-left: 12px;
+}/*# sourceMappingURL=logout.module.css.map */

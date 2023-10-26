@@ -1,0 +1,121 @@
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-gallery .main-photo {
+  width: 510px;
+  height: 510px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.photo-gallery .main-photo img {
+  width: 510px;
+  height: 510px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-gallery .main-photo .prev-button,
+.photo-gallery .main-photo .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #3e3b35;
+  background-color: transparent;
+}
+.photo-gallery .main-photo .prev-button:hover,
+.photo-gallery .main-photo .next-button:hover {
+  color: #fefff6;
+}
+.photo-gallery .main-photo .prev-button.prev-button,
+.photo-gallery .main-photo .next-button.prev-button {
+  left: 10px;
+}
+.photo-gallery .main-photo .prev-button.next-button,
+.photo-gallery .main-photo .next-button.next-button {
+  right: 10px;
+}
+.photo-gallery .thumbnails {
+  display: flex;
+  justify-content: center;
+}
+.photo-gallery .thumbnails .thumbnail-list {
+  display: flex;
+  gap: 50px;
+}
+.photo-gallery .thumbnails .thumbnail-list .thumbnail {
+  width: 138px;
+  height: 138px;
+}
+.photo-gallery .thumbnails .thumbnail-list .thumbnail img {
+  width: 138px;
+  height: 138px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 390px) {
+  .photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo-gallery .main-photo {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .photo-gallery .main-photo img {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .photo-gallery .main-photo .prev-button,
+  .photo-gallery .main-photo .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #3e3b35;
+    background-color: transparent;
+  }
+  .photo-gallery .main-photo .prev-button:hover,
+  .photo-gallery .main-photo .next-button:hover {
+    color: #fefff6;
+  }
+  .photo-gallery .main-photo .prev-button.prev-button,
+  .photo-gallery .main-photo .next-button.prev-button {
+    left: 10px;
+  }
+  .photo-gallery .main-photo .prev-button.next-button,
+  .photo-gallery .main-photo .next-button.next-button {
+    right: 10px;
+  }
+  .photo-gallery .thumbnails {
+    display: flex;
+    justify-content: center;
+  }
+  .photo-gallery .thumbnails .thumbnail-list {
+    display: flex;
+    gap: 22px;
+  }
+  .photo-gallery .thumbnails .thumbnail-list .thumbnail {
+    width: 68px;
+    height: 68px;
+  }
+  .photo-gallery .thumbnails .thumbnail-list .thumbnail img {
+    width: 68px;
+    height: 68px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=Carousel.module.css.map */

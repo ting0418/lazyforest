@@ -1,0 +1,412 @@
+.nestedMenu {
+  padding-left: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #3e3b35;
+  color: white;
+}
+@media (max-width: 768px) {
+  .nestedMenu {
+    padding-left: 0px;
+    position: relative;
+  }
+}
+.nestedMenu .menuItem {
+  cursor: pointer;
+  padding-block: 10px;
+  border-top: 4px solid transparent;
+}
+@media (max-width: 768px) {
+  .nestedMenu .menuItem {
+    position: relative;
+  }
+}
+.nestedMenu .menuItem .menuItemLabel {
+  padding-inline: 20px;
+  padding-block: 6px;
+  border-right: 0.5px solid #eee;
+}
+@media (max-width: 768px) {
+  .nestedMenu .menuItem .menuItemLabel {
+    padding-inline: 14px;
+  }
+}
+.nestedMenu .menuItem:hover {
+  color: #3e3b35;
+  background: #fefff6;
+  border-top: 4px solid #d1ef1a;
+}
+
+.all {
+  justify-content: center;
+  background: #fefff6;
+  display: flex;
+}
+.all p {
+  margin-bottom: 0;
+}
+.all .asideRight {
+  margin-inline: 320px;
+}
+.all .asideRight .info {
+  padding-top: 25px;
+}
+.all .asideRight .info .userInfo {
+  margin-bottom: 56px;
+}
+.all .asideRight .info .userInfo .userImage {
+  border-radius: 50%;
+}
+.all .asideRight .info .userInfo .userId {
+  padding-right: 22px;
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .info .userInfo .date {
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .info .title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 56px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .info .contentMain {
+  padding-top: 33px;
+  width: 977px;
+  margin-bottom: 20px;
+  color: var(--dark, #3e3b35);
+  font-size: 20px;
+  font-weight: 400;
+}
+.all .asideRight .info .post_1 {
+  margin-bottom: 20px;
+}
+.all .asideRight .info .post_2 {
+  margin-bottom: 20px;
+}
+.all .asideRight .info .post_3 {
+  margin-bottom: 20px;
+}
+.all .asideRight .tags {
+  padding-top: 15px;
+  display: flex;
+}
+.all .asideRight .tags .tag {
+  height: 31px;
+  padding-block: 5px;
+  padding-inline: 13px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.all .asideRight .commentAndFire {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+.all .asideRight .commentAndFire .fires {
+  margin-right: 32px;
+}
+.all .asideRight .commentAndFire .fires .fire {
+  width: 28px;
+  height: 32px;
+  color: #a1b719;
+}
+.all .asideRight .commentAndFire .fires .fireIconActive {
+  width: 28px;
+  height: 32px;
+  color: red;
+}
+.all .asideRight .commentAndFire .fires .fire:hover {
+  color: #d1ef1a;
+}
+.all .asideRight .commentAndFire .fires .fireCount {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.all .asideRight .commentAndFire .fires .fireCountActive {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.all .asideRight .commentAndFire .comments {
+  display: flex;
+  align-items: center;
+}
+.all .asideRight .commentAndFire .comments .comment {
+  width: 28px;
+  height: 32px;
+  color: #a1b719;
+  margin-right: 17px;
+}
+.all .asideRight .commentAndFire .comments .commentCount {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.all .asideRight .commentAndFire .edit {
+  width: 32px;
+  height: 32px;
+  color: #d1ef1a;
+}
+.all .asideRight .messageInput {
+  width: 977px;
+  border: 1px solid #a1b719;
+}
+.all .asideRight .messageInput .userMessageInfo {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 18px;
+}
+.all .asideRight .messageInput .userMessageInfo .userCommentImage {
+  border-radius: 50%;
+}
+.all .asideRight .messageInput .userMessageInfo .userMessageId {
+  padding-left: 9px;
+  padding-right: 22px;
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .messageInput .userMessageInfo .messageDate {
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .messageInput .postMessage {
+  width: 93px;
+  background: #a1b719;
+  color: white;
+  margin-inline: 20px;
+  margin-block: 18px;
+}
+.all .asideRight .totalMessage {
+  width: 977px;
+  margin-top: 51px;
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+  border-bottom: 1px solid var(--dark, #3e3b35);
+}
+.all .asideRight .userMessageTextInfo {
+  margin-top: 22px;
+  margin-bottom: 36px;
+  align-items: center;
+}
+.all .asideRight .userMessageTextInfo .user {
+  border-radius: 50%;
+}
+.all .asideRight .userMessageTextInfo .userMessageTextId {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .contentText {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 29px;
+  color: var(--dark, #3e3b35);
+}
+.all .asideRight .messageTextDate {
+  width: 977px;
+  font-size: 20px;
+  color: var(--dark, #3e3b35);
+  font-weight: 400;
+  border-bottom: 1px solid #a1b719;
+}
+
+@media (max-width: 390px) {
+  .all {
+    justify-content: center;
+  }
+  .all .asideLeft {
+    display: none;
+  }
+  .all .asideRight {
+    margin-inline: 0;
+    padding-inline: 26px;
+  }
+  .all .asideRight .info .userInfo {
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .all .asideRight .info .userInfo .userImage {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .all .asideRight .info .userInfo .userId {
+    font-size: 14px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .info .userInfo .date {
+    font-size: 14px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .info .userInfo .type {
+    font-size: 14px;
+  }
+  .all .asideRight .info .title {
+    width: 260px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .info .contentMain {
+    padding-top: 16px;
+    width: 260px;
+    margin-bottom: 10px;
+    color: var(--dark, #3e3b35);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .all .asideRight .info .content {
+    width: 260px;
+    margin-bottom: 10px;
+    color: var(--dark, #3e3b35);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .all .asideRight .info .post_1 {
+    width: 260px;
+    height: 175px;
+    margin-bottom: 20px;
+  }
+  .all .asideRight .info .post_2 {
+    width: 260px;
+    height: 175px;
+    margin-bottom: 20px;
+  }
+  .all .asideRight .info .post_3 {
+    width: 260px;
+    height: 175px;
+    margin-bottom: 20px;
+  }
+  .all .asideRight .tags {
+    display: flex;
+  }
+  .all .asideRight .tags .tag {
+    height: 18px;
+    padding-block: 0px;
+    padding-inline: 6px;
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 7px;
+  }
+  .all .asideRight .commentAndFire {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    margin-bottom: 50px;
+  }
+  .all .asideRight .commentAndFire .fires {
+    margin-right: 32px;
+  }
+  .all .asideRight .commentAndFire .fires .fire {
+    width: 15px;
+    height: 15px;
+    color: #a1b719;
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .commentAndFire .fires .fireIconActive {
+    width: 15px;
+    height: 15px;
+    color: red;
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .commentAndFire .fires .fireCount {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .commentAndFire .fires .fireCountActive {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .commentAndFire .comments {
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .commentAndFire .comments .comment {
+    width: 15px;
+    height: 15px;
+    color: #a1b719;
+    margin-right: 10px;
+  }
+  .all .asideRight .commentAndFire .comments .commentCount {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .all .asideRight .messageInput {
+    width: 260px;
+    border: 1px solid #a1b719;
+  }
+  .all .asideRight .messageInput .userMessageInfo {
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-bottom: 18px;
+  }
+  .all .asideRight .messageInput .userMessageInfo .userCommentImage {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .all .asideRight .messageInput .userMessageInfo .userMessageId {
+    font-size: 14px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .messageInput .userMessageInfo .messageDate {
+    font-size: 14px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .messageInput .postMessage {
+    width: 76px;
+    background: #a1b719;
+    color: white;
+    margin-inline: 20px;
+    margin-block: 18px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .all .asideRight .totalMessage {
+    width: 260px;
+    margin-top: 29px;
+    font-size: 14px;
+    color: var(--dark, #3e3b35);
+    border-bottom: 1px solid var(--dark, #3e3b35);
+  }
+  .all .asideRight .userMessageTextInfo {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    align-items: center;
+  }
+  .all .asideRight .userMessageTextInfo .user {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+  }
+  .all .asideRight .userMessageTextInfo .userMessageTextId {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .contentText {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 29px;
+    color: var(--dark, #3e3b35);
+  }
+  .all .asideRight .messageTextDate {
+    max-width: 260px;
+    font-size: 12px;
+    color: var(--dark, #3e3b35);
+    font-weight: 400;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #a1b719;
+  }
+}/*# sourceMappingURL=post-info.module.css.map */

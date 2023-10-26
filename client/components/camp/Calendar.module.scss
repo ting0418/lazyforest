@@ -1,0 +1,166 @@
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+.calendar {
+  background-color: $secondary;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  padding: 35px;
+
+  .year {
+    font-size: 18px;
+    color: $light;
+    display: flex;
+    justify-content: center;
+  }
+  .month {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    button {
+      background-color: transparent;
+      border: 0;
+      height: 18px;
+      color: $main;
+    }
+    .monthNames {
+      color: $light;
+      font-size: 18px;
+    }
+  }
+
+  .calendarTable {
+    margin-top: 40px;
+    cursor: pointer;
+
+    tr {
+      color: $main;
+      text-align: center;
+      padding: 16px;
+    }
+
+    td {
+      font-size: 15px;
+      text-align: center;
+      color: $light;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+
+      &.today {
+        color: $main;
+      }
+
+      &.selectedStartDate {
+        background-color: $main;
+        color: $dark;
+        border-radius: 50% 0 0 50%;
+      }
+
+      &.inDateRange {
+        background-color: $main;
+        color: $dark;
+        border-radius: 0;
+      }
+
+      &.selectedEndDate {
+        background-color: $main;
+        color: $dark;
+        border-radius: 0 50% 50% 0;
+      }
+      &:hover {
+        background-color: $highlight;
+        // border-radius: 50%;
+        cursor: pointer; 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .calendar {
+    background-color: $secondary;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: -30px;
+    // width: 308px;
+    // height: 297px;
+
+    .year {
+      font-size: 18px;
+      color: $light;
+      display: flex;
+      justify-content: center;
+    }
+    .month {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+
+      button {
+        background-color: transparent;
+        border: 0;
+        height: 16px;
+        color: $main;
+      }
+      .monthNames {
+        color: $light;
+        font-size: 16px;
+      }
+    }
+
+    .calendarTable {
+      margin-top: 20px;
+      cursor: pointer;
+
+      tr {
+        font-size: 10px;
+      }
+
+      td {
+        font-size: 10px;
+        text-align: center;
+        color: $light;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        &.today {
+          color: $main;
+        }
+
+        &.selectedStartDate {
+          background-color: $main;
+          color: $dark;
+          border-radius: 50% 0 0 50%;
+        }
+
+        &.inDateRange {
+          background-color: $main;
+          color: $dark;
+          border-radius: 0;
+        }
+
+        &.selectedEndDate {
+          background-color: $main;
+          color: $dark;
+          border-radius: 0 50% 50% 0;
+        }
+        &:hover {
+          background-color: $highlight; 
+          // border-radius: 50%;
+          cursor: pointer; 
+        }
+      }
+    }
+  }
+}

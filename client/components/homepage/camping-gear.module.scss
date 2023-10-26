@@ -1,0 +1,106 @@
+.container {
+  padding-bottom: 320px;
+}
+.campingGear {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.logoImg {
+  width: 57px;
+  height: 41px;
+}
+.text1 {
+  color: #3e3b35;
+  font-family: 'din-condensed';
+  font-size: 64px;
+  margin: 0;
+  padding-top: 50px;
+}
+.text2 {
+  color: #a1b719;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.item {
+  width: 1298px;
+  margin: auto;
+}
+.title {
+  color: #3e3b35;
+  font-size: 32px;
+  font-weight: 600;
+}
+.address {
+  color: #8e8777;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.intro {
+  font-size: 20px;
+  color: #3e3b35;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 0.6;
+  height: 128px;
+}
+.btn {
+  color: #fefff6;
+  font-size: 20px;
+  font-weight: 500;
+  width: 139px;
+  height: 41px;
+  border-radius: 8px;
+  background-color: #a1b719;
+  border: none;
+}
+.seeMore {
+  color: #3e3b35;
+  font-size: 14px;
+  font-weight: 600;
+}
+// 手機
+.mobliemap {
+  width: 300px;
+  height: 300px;
+}
+.gearpic {
+  overflow: hidden;
+  width: 77px;
+  height: 77px;
+}
+.btnPh {
+  border-radius: 8px;
+  background: var(--highlight, #a1b719);
+  width: 71px;
+  height: 26px;
+  font-size: 12px;
+  color: #fefff6;
+  border: #a1b719;
+}
+.around {
+  font-family: 'din-condensed';
+  font-size: 28px;
+  margin-top: 45px;
+}
+.seeMorePh {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e3b35;
+}
+.info {
+  font-size: 12px;
+  color: var(--dark, #3e3b35);
+  opacity: 0.6;
+  margin-top: 10px;
+}
+.titlePh {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e3b35;
+}
+.introPh {
+  font-size: 12px;
+  color: #8e8777;
+}

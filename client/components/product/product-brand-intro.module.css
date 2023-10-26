@@ -1,0 +1,55 @@
+.brandCard {
+  border: 0;
+  box-shadow: 0px 0px 10px rgba(62, 59, 53, 0.1882352941);
+}
+
+.brandTextContainer {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media (max-width: 768px) {
+  .brandTextContainer {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.brandImgContainer {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #fefff6;
+  border-right: 7px solid #d1ef1a;
+}
+@media (max-width: 768px) {
+  .brandImgContainer {
+    border-right: 0;
+    border-bottom: 7px solid #d1ef1a;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.brandImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.cardTitle {
+  color: #fefff6;
+  font-size: 24px;
+  font-family: "IBM Plex Sans";
+}
+
+.cardText {
+  color: #8e8777;
+  font-size: 20px;
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .cardText {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=product-brand-intro.module.css.map */

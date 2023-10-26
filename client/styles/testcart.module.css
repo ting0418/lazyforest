@@ -1,0 +1,159 @@
+.seven {
+  width: 350px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: 130px;
+}
+
+.search {
+  background: #d1ef1a;
+  border: solid 1px #d1ef1a;
+  width: 350px;
+  height: 35px;
+}
+
+.eleven {
+  width: 500px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.addresslength {
+  width: 300px;
+}
+
+.circlescontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circlescontainer .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.circlescontainer .line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #8e8777;
+}
+
+.title {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 50px;
+}
+@media (max-width: 576px) {
+  .title {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+}
+
+.testcarttitle {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 50px;
+}
+@media (max-width: 576px) {
+  .testcarttitle {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+}
+
+.checkouttitle {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 50px;
+}
+@media (max-width: 576px) {
+  .checkouttitle {
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+}
+@media (max-width: 576px) {
+  .button {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+.selectsize {
+  width: 540px;
+}
+@media (max-width: 576px) {
+  .selectsize {
+    width: 280px;
+  }
+}
+
+.citysize {
+  width: 550px;
+  height: 45px;
+}
+@media (max-width: 576px) {
+  .citysize {
+    width: 280px;
+  }
+}
+
+.checkoutsize {
+  width: 550px;
+  height: 45px;
+}
+@media (max-width: 576px) {
+  .checkoutsize {
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+.checkoutsize2 {
+  width: 1170px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .checkoutsize2 {
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+.product {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mobilead {
+  width: 160px;
+  font-size: 16px;
+  text-align: center;
+  margin-block: 5px;
+}
+
+.mobilecartfs {
+  font-size: 12px;
+}
+
+.invalidinput::-moz-placeholder {
+  color: red;
+}
+
+.invalidinput::placeholder {
+  color: red;
+}/*# sourceMappingURL=testcart.module.css.map */

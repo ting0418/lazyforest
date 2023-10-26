@@ -1,0 +1,289 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #3e3b35;
+  border-bottom: 20px solid #d1ef1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.mobilepic {
+  width: 294px;
+  height: 177px;
+}
+
+.mobilepic {
+  width: 294px;
+  height: 177px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.word {
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.p1 {
+  color: #fefff6;
+  font-family: "din-condensed";
+  font-size: 64px;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.p2 {
+  color: #d1ef1a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.conponent {
+  width: 856px;
+  height: 434px;
+  border-radius: 5px;
+  border: 2px solid #fefff6;
+}
+
+.campsite h1 {
+  font-size: 32px;
+  color: #fefff6;
+  padding-top: 26px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #d1ef1a;
+}
+
+.text {
+  color: #fefff6;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 13px;
+  margin-bottom: 6px;
+}
+
+.customSpan {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 12px;
+  color: #8e8777;
+  border-radius: 5px;
+  background-color: #3e3b35;
+  border: 1px solid #8e8777;
+  margin: 10px;
+}
+
+.viewMore {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fefff6;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.location {
+  position: relative;
+  text-align: center;
+}
+.location::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 215px;
+  width: 752px;
+  height: 1px;
+  background-color: #fefff6;
+}
+.location::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 215px;
+  width: 700px;
+  height: 1px;
+  background-color: #fefff6;
+}
+
+.weather {
+  padding: 20px;
+}
+
+.weather h2 {
+  font-size: 40px;
+  padding-top: 50px;
+  color: #fefff6;
+}
+
+.weather p {
+  color: #d1ef1a;
+  font-size: 20px;
+}
+
+.forecast {
+  background-color: #8e8777;
+  border: none;
+  color: #fefff6;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 0 15px;
+}
+
+.weatherBox {
+  width: 85px;
+  height: 110px;
+  border-radius: 9px;
+  border: 1px solid var(--light, #fefff6);
+  text-decoration: none;
+}
+
+.weatherBox:hover {
+  background-color: #fefff6;
+  color: #3e3b35;
+}
+
+.weatherp {
+  font-size: 20px;
+  color: #fefff6;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px;
+  margin: 0;
+}
+
+.weatherBox:hover .weatherp {
+  color: #3e3b35;
+}
+
+.weatherIcon {
+  width: 50px;
+  height: 30px;
+  color: #fefff6;
+}
+
+.weatherBox:hover .weatherIcon {
+  color: #3e3b35;
+}
+
+.containerPh {
+  width: 100%;
+  height: 100vh;
+  background-color: #3e3b35;
+  border-bottom: 20px solid #d1ef1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p1Ph {
+  font-size: 28px;
+  font-family: "din-condensed";
+  color: #fefff6;
+  padding-top: 29px;
+  margin: 0;
+}
+
+.p2Ph {
+  font-size: 16px;
+  color: #d1ef1a;
+}
+
+.weatherPh h2 {
+  font-size: 16px;
+}
+
+.conponentPh {
+  width: 347px;
+  height: 378px;
+  border-radius: 4px;
+  border: 1px solid var(--light, #fefff6);
+  margin: auto;
+}
+
+.campsitePh h1 {
+  font-size: 18px;
+  margin-left: 10px;
+  border-bottom: 3px solid #d1ef1a;
+  color: #fefff6;
+  font-weight: 500;
+}
+
+.textPh {
+  font-size: 11px;
+  color: #fefff6;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+.customSpanPh {
+  font-size: 8px;
+  background-color: var(--light, #8e8777);
+  color: #fefff6;
+  font-weight: 400;
+  border-radius: 5px;
+  background: var(--secondary, #8e8777);
+  padding: 5px;
+  margin: 0 4px;
+}
+
+.linkPh {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.viewMore {
+  margin: 0;
+}
+
+.weatherPh {
+  color: #fefff6;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.locationPh {
+  color: #d1ef1a;
+  font-size: 10px;
+}
+
+.locationPh {
+  position: relative;
+  text-align: center;
+}
+.locationPh::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 145px;
+  height: 1px;
+  background-color: #fefff6;
+}
+.locationPh::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 145px;
+  height: 1px;
+  background-color: #fefff6;
+}/*# sourceMappingURL=camping-spot.module.css.map */

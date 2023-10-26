@@ -1,0 +1,89 @@
+.slideImg {
+  width: 100%;
+  // height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #3e3b3520;
+}
+.slideCurrentImg {
+  height: 300px;
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+}
+.slideNextImg {
+  height: 200px;
+  @media (max-width: 768px) {
+    height: 150px;
+  }
+}
+.carouselImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  @media (max-width: 768px) {
+    height: 250px;
+  }
+}
+.thumbnailsImg {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  @media (max-width: 768px) {
+    height: 70px;
+  }
+}
+
+.slideContent {
+  padding: 30px;
+  padding-right: 60px;
+  @media (max-width: 768px) {
+    padding-inline: 15px;
+  }
+}
+.title {
+  font-family: 'IBM Plex Sans';
+  font-size: 24px;
+  font-weight: 800;
+  color: #3e3b35;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: justify;
+  color: #8e8777;
+  margin-bottom: 25px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.price {
+  font-family: 'din-condensed';
+  font-size: 36px;
+  color: #3e3b35;
+  margin-right: 18px;
+}
+.priceDel {
+  font-family: 'din-condensed';
+  font-size: 24px;
+  color: #8e8777;
+  text-decoration: line-through;
+}
+
+.slideBtn {
+  height: 85px;
+  font-size: 60px;
+  margin-top: 10px;
+  color: '#d1ef1a';
+  margin-right: 15px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,264 @@
+.nav {
+  position: fixed;
+  background-color: hsl(42, 9%, 51%);
+  width: 274px;
+  height: 100vh;
+  border-right: 13px solid #3e3b35;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.centeredContent {
+  padding-top: 92px;
+  margin: 0 auto;
+}
+
+.centeredUl {
+  list-style: none;
+}
+
+.firstListbtn-active {
+  width: 172px;
+  height: 89px;
+  border-radius: 15px;
+  background: #3e3b35;
+  color: #fefff6;
+  border: none;
+  margin-top: 64px;
+}
+
+.firstListbtn {
+  background-color: #8e8777;
+  border: none;
+  text-align: start;
+  margin-top: 60px;
+}
+
+.customButton {
+  background-color: #8e8777;
+  border: none;
+}
+
+.bookCamping {
+  color: #fefff6;
+  font-size: 28px;
+  font-family: "din-condensed";
+  font-weight: 700;
+  margin: 0px 0 5px 10px;
+}
+
+.campReservation {
+  color: #fefff6;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.shoppingBtn {
+  background-color: #8e8777;
+  border: none;
+  text-align: start;
+  margin-top: 60px;
+}
+
+.shoppingBtn-active {
+  width: 172px;
+  height: 89px;
+  border-radius: 15px;
+  background: #3e3b35;
+  color: #fefff6;
+  border: none;
+  margin-top: 64px;
+  text-align: start;
+}
+
+.shopping {
+  color: #fefff6;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "din-condensed";
+  margin: 0 0 5px 10px;
+}
+
+.sale {
+  color: #fefff6;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  margin: 0 0 5px 10px;
+}
+
+.communicateBtn {
+  background-color: #8e8777;
+  border: none;
+  text-align: start;
+  margin-top: 40px;
+}
+
+.communicateBtn-active {
+  width: 172px;
+  height: 89px;
+  border-radius: 15px;
+  background: #3e3b35;
+  color: #fefff6;
+  border: none;
+  margin-top: 64px;
+  text-align: start;
+}
+
+.communicate1 {
+  color: #fefff6;
+  font-family: "din-condensed";
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 5px 10px;
+}
+
+.communicate2 {
+  color: #fefff6;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  margin: 0 0 5px 10px;
+}
+
+.memberCenter {
+  margin: 20px auto;
+  margin-top: 100px;
+}
+
+.circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: #d1ef1a;
+}
+
+.customLink {
+  text-decoration: none;
+}
+
+.logoImg {
+  display: flex;
+  margin: 20px 20px;
+}
+
+.hi {
+  font-size: 20px;
+  color: #fefff6;
+  margin: 0;
+}
+
+.user {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fefff6;
+}
+
+.userContainer {
+  margin-left: 15px;
+}
+
+.journey {
+  color: #fefff6;
+  width: 216px;
+  height: 69px;
+  border-radius: 8px;
+  border: 1px;
+  background: #3e3b35;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.journey p {
+  margin: 0;
+}
+
+.journey a {
+  text-decoration: none;
+  position: relative;
+  color: #fefff6;
+  display: flex;
+  align-items: center;
+}
+
+.journeyR {
+  padding: 10px;
+  color: #fefff6;
+}
+
+.mapMarket {
+  width: 27px;
+  height: 24px;
+}
+
+.journeyL {
+  text-decoration: none;
+  color: #fefff6;
+  margin-left: 10px;
+}
+
+.shoppingCart {
+  width: 22px;
+  height: 20px;
+}
+
+.journeyL .mapMarket {
+  margin-right: 15px;
+}
+
+.journeyR .mapMarket {
+  margin-right: 10px;
+}
+
+.journeyR::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 39px;
+  background: #a1b719;
+}
+
+.phoneNav {
+  position: fixed;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #fefff6;
+}
+
+.headLazy {
+  width: 390px;
+  height: 104px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lazy {
+  color: #3e3b35;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "din-condensed";
+  margin-left: 90px;
+  text-decoration: none;
+}
+
+.shoppingCart {
+  width: 26px;
+  height: 25px;
+  color: #3e3b35;
+}
+
+.fiUser {
+  width: 26px;
+  height: 25px;
+  color: #3e3b35;
+}/*# sourceMappingURL=aside.module.css.map */

@@ -1,0 +1,152 @@
+/* nav-bar.module.scss */
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+.navbar {
+  border-top: 1px $secondary solid;
+  display: flex;
+  width: 100%;
+  height: 73px;
+  background-color: $dark;
+  padding-left: 123px;
+  padding-top: 18px;
+
+  .itemContainer {
+    width: 150px;
+  }
+
+  .navItem {
+    padding: 13px 50px;
+    color: $light;
+    font-size: 24px;
+    position: relative;
+    margin-top: -3px;
+
+    &::before {
+      content: '';
+      right: 0;
+      width: 1px;
+      height: 39px;
+      background-color: $secondary;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover,
+    &.active {
+      margin-top: -18px;
+      background-color: $light;
+      color: $dark;
+      border-top: 8px solid $main;
+      line-height: 40px;
+      &::before {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .myButton {
+    font-size: 24px;
+    background-color: transparent;
+    color: $dark;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .selectedButton {
+    background-color: transparent;
+    color: $highlight;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar {
+    // border-top: 1px $secondary solid;
+    display: flex;
+    width: 390px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 18px;
+
+    .itemContainer {
+      width: 70px;
+    }
+
+    .navItemWrapper {
+      width: 70px;
+    }
+
+    .navItem {
+      padding: 0px 0px;
+      color: $light;
+      font-size: 14px;
+      position: relative;
+      margin-top: -4px;
+      text-align: center;
+
+      &::before {
+        content: '';
+        right: 0;
+        width: 1px;
+        height: 25px;
+        background-color: $secondary;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover,
+      &.active {
+        border-top: 4px solid $main;
+        line-height: 36px;
+        padding-right: -20px;
+        &::before {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; 
+      gap: 2px;
+      max-height: 80px; 
+      align-items: center; 
+      padding-bottom: 0;
+    }
+
+    .myButton {
+      font-size: 14px;
+      background-color: transparent;
+      color: $dark;
+      padding: 0px 4px;
+      border: none;
+      cursor: pointer;
+      
+    }
+
+    .selectedButton {
+      background-color: transparent;
+      color: $highlight;
+      padding: 0px 4px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

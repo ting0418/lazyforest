@@ -1,0 +1,164 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.itemLink {
+  text-decoration: none;
+  // display: inline-block;
+}
+
+.hoverBtnGroup {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card:hover .hoverBtnGroup {
+  display: flex;
+}
+
+.hoverBtn {
+  cursor: pointer;
+  margin-inline: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #fefff6;
+  border-radius: 50%;
+  border: none;
+}
+
+.cardHead {
+  position: relative;
+}
+.cardHead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3); /* 灰色半透明遮罩 */
+  opacity: 0; /* 初始时不可见 */
+  transition: opacity 0.3s; /* 添加渐变动画 */
+}
+
+.card:hover .cardHead::before {
+  opacity: 1; /* hover 时显示伪元素 */
+}
+
+.card {
+  position: relative;
+  // min-width: 150px;
+  width: 250px;
+  margin-inline: 18px;
+  margin-block: 33px;
+  box-shadow: 0px 0px 10px #3e3b3530;
+  border-radius: 8px;
+  @media (max-width: 768px) {
+    width: 160px;
+    margin-inline: 2px;
+    margin-block: 15px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+.cardTitle {
+  white-space: nowrap; /* 限制文字不換行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  padding-inline: 8px;
+  padding-block: 5px;
+  color: #fefff6;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.cardPrice {
+  font-family: 'din-condensed';
+  display: inline-block;
+  padding-inline: 8px;
+  padding-block: 10px;
+  color: #fefff6;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding-block: 5px;
+  }
+}
+.cardDelPrice {
+  font-family: 'din-condensed';
+  // text-align: start;
+  text-decoration: line-through;
+  display: inline-block;
+  font-size: 18px;
+  color: #8e8777;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+.productTags {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.cardBadge {
+  background-color: #d1ef1a;
+  margin-inline: 8px;
+  margin-bottom: 4px;
+  @media (max-width: 768px) {
+    font-size: 8px;
+    margin-inline: 4px;
+  }
+}
+.hiddenBadge {
+  visibility: hidden;
+}
+.cardImg {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+}
+.cardBody {
+  background-color: #3e3b35;
+  padding: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.linkUnstyled {
+  text-decoration: none;
+}
+
+// SWIPER
+.swiperContainer {
+  position: relative;
+}
+.swiperPrevBtn {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  z-index: 99;
+}
+.swiperNextBtn {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  z-index: 99;
+}

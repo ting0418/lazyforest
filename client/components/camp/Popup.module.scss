@@ -1,0 +1,257 @@
+$light: #fefff6;
+$dark: #3e3b35;
+$secondary: #8e8777;
+$main: #d1ef1a;
+$highlight: #a1b719;
+
+.root {
+  * {
+    box-sizing: border-box;
+  }
+  :global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    .wrap {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      align-items: center;
+      //   display: flex;
+      display: none;
+      z-index: 999;
+    }
+    .wrap.active {
+      display: flex;
+    }
+
+    .confirm {
+      margin-right: 20px;
+    }
+  }
+
+  .bookingButton {
+    button {
+      width: 207px;
+      height: 50px;
+      background: $main;
+      color: $dark;
+      border: none;
+      border-radius: 8px;
+      margin: 20px auto 0;
+    }
+  }
+  .Card {
+    width: 600px;
+    height: 700px;
+    background-color: $light;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: $dark;
+      text-align: center;
+      padding-top: 8px;
+    }
+
+    p {
+      color: $dark;
+      font-size: 18px;
+      padding-top: 40px;
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .closeButton {
+      button {
+        color: $main;
+        font-size: 30px;
+        border: 0px;
+        background-color: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .buttonContainer {
+      margin-top: auto;
+      button {
+        background-color: $main;
+        color: $dark;
+        padding: 13px 39px;
+        margin-bottom: 35px;
+        width: 207px;
+        height: 50px;
+        background: $main;
+        color: $dark;
+        border: none;
+        border-radius: 8px;
+        margin: 20px 20px;
+      }
+    }
+  }
+  .PrevNext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
+    .prevButton {
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      // padding: 10px;
+      color: $dark;
+      background-color: transparent;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+
+    .nextButton {
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      // padding: 10px;
+      color: $dark;
+      background-color: transparent;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .bookingButton {
+      button {
+        width: 106px;
+        height: 35px;
+        background: $main;
+        color: $dark;
+        border: none;
+        border-radius: 4px;
+        margin: 20px auto 20px;
+        font-size: 12px;
+      }
+    }
+    .Card {
+      width: 320px;
+      height: 400px;
+      background-color: $light;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      position: relative;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+
+      h2 {
+        font-size: 14px;
+        color: $dark;
+        text-align: center;
+        padding-top: 8px;
+      }
+
+      p {
+        color: $dark;
+        font-size: 10px;
+        padding-top: 20px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .closeButton {
+        button {
+          color: $main;
+          font-size: 20px;
+          border: 0px;
+          background-color: transparent;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+      }
+
+      .buttonContainer {
+        margin-top: auto;
+        button {
+          background-color: $main;
+          color: $dark;
+          padding: 0px;
+          margin-bottom: 35px;
+          width: 108px;
+          height: 35px;
+          background: $main;
+          color: $dark;
+          border: none;
+          border-radius: 4px;
+          margin: 10px 20px 30px 20px;
+          font-size: 12px;
+        }
+      }
+    }
+    .PrevNext {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 20px;
+
+      .prevButton {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        // padding: 10px;
+        color: $dark;
+        background-color: transparent;
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+
+      .nextButton {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        color: $dark;
+        background-color: transparent;
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+  }
+}
