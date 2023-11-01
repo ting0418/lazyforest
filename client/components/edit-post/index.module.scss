@@ -1,0 +1,44 @@
+.all {
+  background: #fefff6;
+  display: flex;
+  p {
+    margin-bottom: 0;
+  }
+  .asideLeft {
+    width: 275px;
+    height: 1080px;
+    background: #a1b719;
+  }
+  .asideRight {
+    width: 1645px;
+    .rules {
+      display: flex;
+      align-items: center;
+    }
+    .post {
+      background: #a1b719;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .asideLeft {
+    display: none;
+  }
+  .asideRight {
+    width: 330px;
+    margin-inline: 30px;
+    .title {
+      font-size: 24px;
+    }
+    .rules {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .post {
+      background: #a1b719;
+      color: #fff;
+    }
+  }
+}

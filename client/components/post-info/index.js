@@ -226,9 +226,11 @@ export default function Index() {
                 <p className={styles.commentCount}>{data.comments[0].length}</p>
               </div>
               {user.id === data.forum[0].member_id ? (
-                <button className="btn d-flex ms-auto">
-                  <PiPencilSimpleLineDuotone className={styles.edit} />
-                </button>
+                <Link className="ms-auto" href="/edit-post">
+                  <button className="btn d-flex">
+                    <PiPencilSimpleLineDuotone className={styles.edit} />
+                  </button>
+                </Link>
               ) : null}
             </div>
             {/* 按讚留言end */}

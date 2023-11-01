@@ -260,7 +260,6 @@ router.get('/oldest', async (req, res, next) => {
     `
     const result = await pool.query(sql)
     console.log('資料', result)
-    // 返回查询结果给客户端
     res.json({ forums: result[0] })
   } catch (error) {
     res
@@ -364,7 +363,6 @@ router.get('/:id', async function (req, res, next) {
       INNER JOIN members ON forum.member_id = members.id
       WHERE forum.id = ?;
     `
-
     const forumResult = await pool.query(forumSql, [forumId])
 
     return res.json({
@@ -379,31 +377,7 @@ router.get('/:id', async function (req, res, next) {
       .json({ error: 'An error occurred while fetching the data.' })
   }
 })
-// router.get('/:id', async function (req, res, next) {
-//   try {
-//     const forumId = req.params.id
-//     const comments = await getCommentsWithQS(req.params.id)
-//     const sql = `
-//       SELECT
-//       forum.*,
-//       member.member_name
-//     FROM forum
-//     INNER JOIN member ON forum.member_id = member.id
-//     WHERE forum.id = ?;
-//     `
-//     const result = await pool.query(sql, [forumId])
-//     return res.json({
-//       message: 'success',
-//       code: '200',
-//       forum: result[0],
-//       comments,
-//     })
-//   } catch (error) {
-//     res
-//       .status(500)
-//       .json({ error: 'An error occurred while fetching the data.' })
-//   }
-// })
+
 // 寫評論
 router.put('/:id', async function (req, res, next) {
   const forums = await updateUserById(req.body, req.params.id)
@@ -428,13 +402,11 @@ router.post(
   }
 )
 
-// !不能刪掉
+// 單張圖片上傳
 // router.post(
 //   '/upload2',
 //   upload.single('avatar'), // 上傳來的檔案(這是單個檔案，欄位名稱為avatar)
 //   async function (req, res, next) {
-//     // req.file 即上傳來的檔案(avatar這個檔案)
-//     // req.body 其它的文字欄位資料…
 //     console.log(req.file, req.body)
 //     const filename = req.file
 //     if (req.file) {
@@ -473,43 +445,5 @@ router.post('/', async function (req, res, next) {
     article: { ...result, id: result.insertId },
   })
 })
-// router.post('/', upload.array('images', 3), async function (req, res, next) {
-//   // 使用 req.body 获取请求正文中的 article 数据
-//   const article = req.body.article
-//   const images = req.files
-
-//   if (isEmpty(article)) {
-//     return res.json({ message: 'fail', code: '400' })
-//   }
-
-//   const imgData = {}
-
-//   for (let i = 0; i < images.length; i++) {
-//     imgData[`img_${i + 1}`] = images[i].filename
-//   }
-
-//   // 合并 article 数据和 imgData
-//   const completeArticle = { ...article, ...imgData }
-
-//   // 将 completeArticle 插入到数据库使用 createUser 函数
-//   const result = await createUser(completeArticle)
-
-//   // 检查 article 数据是否为空
-//   if (isEmpty(article)) {
-//     return res.json({ message: 'fail', code: '400' })
-//   }
-
-//   // 检查是否插入成功
-//   if (result.insertId) {
-//     // 成功加入数据库的响应
-//     return res.json({
-//       message: 'success',
-//       code: '200',
-//       article: { ...completeArticle, id: result.insertId },
-//     })
-//   } else {
-//     return res.json({ message: 'fail', code: '400' })
-//   }
-// })
 
 export default router
