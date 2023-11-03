@@ -225,7 +225,6 @@ router.get('/newest', async (req, res, next) => {
     `
     const result = await pool.query(sql)
 
-    // 返回查询结果给客户端
     res.json({ forums: result[0] })
   } catch (error) {
     res

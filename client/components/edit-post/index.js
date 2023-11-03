@@ -26,7 +26,7 @@ function PostModal() {
     console.log(files)
     setSelectedFiles(files)
   }
-  console.log(type)
+  // console.log(type)
 
   //============================
   const postImages = async () => {
@@ -34,7 +34,6 @@ function PostModal() {
     const formData = new FormData()
     // let formDataArr
     const keys = Object.keys(selectedFiles)
-
     console.log(keys)
 
     if (keys.length > 0) {

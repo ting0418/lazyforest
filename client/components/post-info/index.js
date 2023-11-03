@@ -21,7 +21,6 @@ export default function Index() {
   // 需要改變網址會需要以下這兩隻
   const router = useRouter()
   const { pid } = router.query
-
   const onInfoFetched = (fetchedData) => {
     setData(fetchedData)
   }
@@ -79,7 +78,6 @@ export default function Index() {
     })
 
     const updatedComments = [...data.comments.rows, response.data.comment]
-
     setData((prevData) => ({
       ...prevData,
       comments: {
@@ -146,7 +144,6 @@ export default function Index() {
                   {data.forum[0].forum_dt}
                 </p>
               </div>
-              {/* 10/21剛用 */}
               <div
                 className={'d-block text-secondary text-decoration-underline'}
               >
@@ -237,13 +234,6 @@ export default function Index() {
             {/* 留言區塊start */}
             <div className={styles.messageInput}>
               <div className={`d-flex ${styles.userMessageInfo}`}>
-                {/* <Image
-                  className={styles.userCommentImage}
-                  src={'/forums/camp1.jpeg'}
-                  alt={'圖片'}
-                  width={31}
-                  height={31}
-                /> */}
                 <p className={styles.userMessageId}>{user.name}</p>
                 <p className={styles.messageDate}>{currentTime}</p>
               </div>
@@ -275,13 +265,6 @@ export default function Index() {
             {data.comments[0].map((v) => (
               <div key={v.id}>
                 <div className={`d-flex ${styles.userMessageTextInfo}`}>
-                  {/* <Image
-                    className={styles.user}
-                    // src={message.src}會員照片
-                    alt={'圖片'}
-                    width={31}
-                    height={31}
-                  /> */}
                   <p className={styles.userMessageTextId}>{v.name}</p>
                 </div>
                 <p className={styles.contentText}>{v.content}</p>
