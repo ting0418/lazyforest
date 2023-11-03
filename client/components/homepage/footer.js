@@ -60,7 +60,7 @@ export default function footer(onShowLoginForm) {
         <div>
           <p className={`${styles.statement}`}>
             © 2023 The Lazy Forest, Inc. All rights reserved.
-            本網站僅作為教學使用，如有侵權請聯繫:0912345678 Ｘ先生
+            本網站僅作為教學使用，不得使用於商業用途，如有侵權請告知
           </p>
         </div>
       </div>

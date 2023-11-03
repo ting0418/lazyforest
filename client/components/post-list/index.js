@@ -58,7 +58,6 @@ function PostList() {
         default:
           break
       }
-
       if (apiUrl) {
         const response = await axios.get(apiUrl)
         setForum(response.data.forums)
