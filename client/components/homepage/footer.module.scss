@@ -6,6 +6,10 @@
   height: 440px;
   display: flex;
   width: 1646px;
+  // 12/12新增
+  @media (max-width: 1366px) {
+    width: calc(100% - 274px);
+  }
 }
 
 .content {
@@ -75,7 +79,7 @@
   font-size: 15px;
   background-color: #d1ef1a;
   text-decoration: none;
-  box-shadow:  -4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
 }
 .backtoTopText {
@@ -115,7 +119,7 @@
   height: 18px;
   color: #3e3b35;
 }
-.backtoTopTextPh{
+.backtoTopTextPh {
   color: #3e3b35;
   writing-mode: vertical-lr;
   font-size: 15px;

@@ -197,144 +197,144 @@ router.get('/used', async (req, res, next) => {
   }
 })
 // 依照時間新到舊
-router.get('/newest', async (req, res, next) => {
-  try {
-    const sql = `
-    SELECT
-    forum.id AS forum_id,
-    forum.title AS title,
-    forum.type AS type,
-    forum.img_1,
-    forum.img_2,
-    forum.img_3,
-    forum.content AS content,
-    forum.forum_dt AS forum_dt,
-    forum.likesCount AS likesCount,
+// router.get('/newest', async (req, res, next) => {
+//   try {
+//     const sql = `
+//     SELECT
+//     forum.id AS forum_id,
+//     forum.title AS title,
+//     forum.type AS type,
+//     forum.img_1,
+//     forum.img_2,
+//     forum.img_3,
+//     forum.content AS content,
+//     forum.forum_dt AS forum_dt,
+//     forum.likesCount AS likesCount,
 
-    members.id AS member_id,
-    members.name,
-    (
-      SELECT COUNT(*)
-      FROM comment
-      WHERE comment.forum_id = forum.id
-    ) AS comment_count
-  FROM forum
-  LEFT JOIN members ON forum.member_id = members.id
-  ORDER BY forum.forum_dt DESC;
+//     members.id AS member_id,
+//     members.name,
+//     (
+//       SELECT COUNT(*)
+//       FROM comment
+//       WHERE comment.forum_id = forum.id
+//     ) AS comment_count
+//   FROM forum
+//   LEFT JOIN members ON forum.member_id = members.id
+//   ORDER BY forum.forum_dt DESC;
 
-    `
-    const result = await pool.query(sql)
+//     `
+//     const result = await pool.query(sql)
 
-    res.json({ forums: result[0] })
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: 'An error occurred while fetching the data0.' })
-  }
-})
+//     res.json({ forums: result[0] })
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ error: 'An error occurred while fetching the data0.' })
+//   }
+// })
 // 依照時間舊到新
-router.get('/oldest', async (req, res, next) => {
-  try {
-    const sql = `
-    SELECT
-  forum.id AS forum_id,
-  forum.title AS title,
-  forum.type AS type,
-  forum.img_1,
-  forum.img_2,
-  forum.img_3,
-  forum.content AS content,
-  forum.forum_dt AS forum_dt,
-  forum.likesCount AS likesCount,
-  members.id AS member_id,
-  members.name,
-  (
-    SELECT COUNT(*) 
-    FROM comment 
-    WHERE comment.forum_id = forum.id
-  ) AS comment_count
-      FROM forum
-      LEFT JOIN members ON forum.member_id = members.id
-      ORDER BY forum.forum_dt ASC
-    `
-    const result = await pool.query(sql)
-    console.log('資料', result)
-    res.json({ forums: result[0] })
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: 'An error occurred while fetching the data1.' })
-  }
-})
+// router.get('/oldest', async (req, res, next) => {
+//   try {
+//     const sql = `
+//     SELECT
+//   forum.id AS forum_id,
+//   forum.title AS title,
+//   forum.type AS type,
+//   forum.img_1,
+//   forum.img_2,
+//   forum.img_3,
+//   forum.content AS content,
+//   forum.forum_dt AS forum_dt,
+//   forum.likesCount AS likesCount,
+//   members.id AS member_id,
+//   members.name,
+//   (
+//     SELECT COUNT(*)
+//     FROM comment
+//     WHERE comment.forum_id = forum.id
+//   ) AS comment_count
+//       FROM forum
+//       LEFT JOIN members ON forum.member_id = members.id
+//       ORDER BY forum.forum_dt ASC
+//     `
+//     const result = await pool.query(sql)
+//     console.log('資料', result)
+//     res.json({ forums: result[0] })
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ error: 'An error occurred while fetching the data1.' })
+//   }
+// })
 // 依照人氣多到少
-router.get('/popularity', async (req, res, next) => {
-  try {
-    const sql = `
-    SELECT
-    forum.id AS forum_id,
-    forum.title AS title,
-    forum.type AS type,
-    forum.img_1,
-    forum.img_2,
-    forum.img_3,
-    forum.content AS content,
-    forum.forum_dt AS forum_dt,
-    forum.likesCount AS likesCount,
-    members.id AS member_id,
-    members.name,
-    (
-      SELECT COUNT(*) 
-      FROM comment 
-      WHERE comment.forum_id = forum.id
-    ) AS comment_count
-      FROM forum
-      LEFT JOIN members ON forum.member_id = members.id
-      ORDER BY forum.likesCount DESC
-    `
-    const result = await pool.query(sql)
+// router.get('/popularity', async (req, res, next) => {
+//   try {
+//     const sql = `
+//     SELECT
+//     forum.id AS forum_id,
+//     forum.title AS title,
+//     forum.type AS type,
+//     forum.img_1,
+//     forum.img_2,
+//     forum.img_3,
+//     forum.content AS content,
+//     forum.forum_dt AS forum_dt,
+//     forum.likesCount AS likesCount,
+//     members.id AS member_id,
+//     members.name,
+//     (
+//       SELECT COUNT(*)
+//       FROM comment
+//       WHERE comment.forum_id = forum.id
+//     ) AS comment_count
+//       FROM forum
+//       LEFT JOIN members ON forum.member_id = members.id
+//       ORDER BY forum.likesCount DESC
+//     `
+//     const result = await pool.query(sql)
 
-    res.json({ forums: result[0] })
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: 'An error occurred while fetching the data2.' })
-  }
-})
+//     res.json({ forums: result[0] })
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ error: 'An error occurred while fetching the data2.' })
+//   }
+// })
 // 依照人氣少到多
-router.get('/oldestFirst', async (req, res, next) => {
-  try {
-    const sql = `
-    SELECT
-    forum.id AS forum_id,
-    forum.title AS title,
-    forum.type AS type,
-    forum.img_1,
-    forum.img_2,
-    forum.img_3,
-    forum.content AS content,
-    forum.forum_dt AS forum_dt,
-    forum.likesCount AS likesCount,
-    members.id AS member_id,
-    members.name,
-    (
-      SELECT COUNT(*) 
-      FROM comment 
-      WHERE comment.forum_id = forum.id
-    ) AS comment_count
-      FROM forum
-      LEFT JOIN members ON forum.member_id = members.id
-ORDER BY forum.likesCount ASC
+// router.get('/oldestFirst', async (req, res, next) => {
+//   try {
+//     const sql = `
+//     SELECT
+//     forum.id AS forum_id,
+//     forum.title AS title,
+//     forum.type AS type,
+//     forum.img_1,
+//     forum.img_2,
+//     forum.img_3,
+//     forum.content AS content,
+//     forum.forum_dt AS forum_dt,
+//     forum.likesCount AS likesCount,
+//     members.id AS member_id,
+//     members.name,
+//     (
+//       SELECT COUNT(*)
+//       FROM comment
+//       WHERE comment.forum_id = forum.id
+//     ) AS comment_count
+//       FROM forum
+//       LEFT JOIN members ON forum.member_id = members.id
+// ORDER BY forum.likesCount ASC
 
-    `
-    const result = await pool.query(sql)
+//     `
+//     const result = await pool.query(sql)
 
-    res.json({ forums: result[0] })
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: 'An error occurred while fetching the data3.' })
-  }
-})
+//     res.json({ forums: result[0] })
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ error: 'An error occurred while fetching the data3.' })
+//   }
+// })
 // 細節頁路由
 router.get('/:id', async function (req, res, next) {
   try {
