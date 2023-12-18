@@ -123,7 +123,7 @@ export default function Index() {
           </div>
         ))}
       </div> */}
-      {/* 上面是navbar */}
+
       {data && data.forum && data.comments ? (
         <div className={styles.all}>
           {/* aside-right */}
