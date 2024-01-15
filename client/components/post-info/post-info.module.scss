@@ -51,7 +51,7 @@ $themeTextColor: var(--dark, #3e3b35);
 
     .info {
       padding-top: 25px;
-      @media (max-width: 390px) {
+      @media (max-width: 391px) {
         margin-top: 30px;
         padding-top: 0;
       }
@@ -95,20 +95,11 @@ $themeTextColor: var(--dark, #3e3b35);
       .post_3 {
         margin-bottom: 20px;
       }
-      // .content {
-      //   padding-top: 15px;
-      //   width: 977px;
-      //   margin-bottom: 20px;
-      //   color: $themeTextColor;
-      //   font-size: 20px;
-      //   font-weight: 400;
-      // }
     }
     .tags {
       padding-top: 15px;
       display: flex;
       .tag {
-        // width: 56px;
         height: 31px;
         padding-block: 5px;
         padding-inline: 13px;
@@ -132,7 +123,6 @@ $themeTextColor: var(--dark, #3e3b35);
           width: 28px;
           height: 32px;
           color: red;
-          // margin-right: 17px;
         }
         .fire:hover {
           color: #d1ef1a;
@@ -237,17 +227,15 @@ $themeTextColor: var(--dark, #3e3b35);
 }
 
 // 手機板
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .all {
     justify-content: center;
     .asideLeft {
       display: none;
     }
     .asideRight {
-      // margin-inline: 0;
       padding-top: 100px;
       padding-inline: 26px;
-      // width: 260px;
 
       .info {
         .userInfo {
@@ -325,7 +313,7 @@ $themeTextColor: var(--dark, #3e3b35);
       }
       .commentAndFire {
         display: flex;
-        // width: 260px;
+
         align-items: center;
         padding-top: 22px;
         margin-bottom: 50px;
@@ -371,10 +359,6 @@ $themeTextColor: var(--dark, #3e3b35);
             align-items: center;
           }
         }
-        // .edit {
-        //   width: 14px;
-        //   height: 14px;
-        // }
       }
       .messageInput {
         width: 260px;

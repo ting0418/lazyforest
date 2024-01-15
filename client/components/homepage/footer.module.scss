@@ -7,8 +7,8 @@
   display: flex;
   width: 1646px;
   // 12/12新增
-  @media (max-width: 1366px) {
-    width: calc(100% - 274px);
+  @media (max-width: 1600px) {
+    width: 1310px;
   }
 }
 
