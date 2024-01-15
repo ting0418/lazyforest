@@ -17,5 +17,5 @@ export default function GetPostInfo({ onInfoFetched, pid }) {
     }
 
     fetchData()
-  }, [])
+  }, [onInfoFetched, pid])
 }

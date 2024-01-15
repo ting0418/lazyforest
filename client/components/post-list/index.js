@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import { useEffect, useState } from 'react'
 import { HiOutlinePencilAlt } from 'react-icons/hi'
 import { BsFire } from 'react-icons/bs'
@@ -7,22 +8,14 @@ import Image from 'next/image'
 import ReactPaginate from 'react-paginate'
 import axios from 'axios'
 import Link from 'next/link'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperComponent from './swiper'
 
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/effect-fade'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-// import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules'
-// import GetPostData from './GetPostData'
+// import GetPostData from './GetPostData';
+
 function PostList() {
-  // 分頁
-  const [forum, setForum] = useState([])
   const [selectedCategory, setSelectedCategory] = useState('選擇你的排序')
   const [data, setData] = useState(null)
-  // const [menu, setMenu] = useState(null)
+
   const [menuItems, setMenuItems] = useState([
     '所有文章',
     '熱門文章',
@@ -30,12 +23,13 @@ function PostList() {
     '開箱',
     '心得',
   ])
+
   const [navActive, setActive] = useState(false)
+
   const handleActiveClick = (menuItem) => {
     setActive(menuItem)
   }
 
-  // 分類
   const fetchDataByType = async (menuItems) => {
     try {
       let apiUrl = ''
@@ -60,9 +54,8 @@ function PostList() {
       }
       if (apiUrl) {
         const response = await axios.get(apiUrl)
-        setForum(response.data.forums)
-        setData(response.data)
-        console.log(response.data)
+        setData(response.data) // 將整個 API 響應對象存儲在 data 中
+        console.log('response' + response)
       }
     } catch (error) {
       console.error('資料獲取失敗:', error)
@@ -71,123 +64,83 @@ function PostList() {
 
   useEffect(() => {
     fetchDataByType(setMenuItems)
+    handleActiveClick('所有文章')
   }, [setMenuItems])
 
   const handleTypeClick = (menuitems) => {
     fetchDataByType(menuitems)
+    setForumOffset(0)
   }
-  //-----
+
   async function ChooseCategory() {
-    const response = await axios.get(
-      'http://localhost:3005/api/postlist/newest'
-    )
-    setForum(response.data.forums)
-    setData(response.data)
-  }
-  // 初次渲染要執行
-  useEffect(() => {
-    // 在組件載入時執行 ChooseCategory 函式來設定預設值
-    ChooseCategory()
-  }, [])
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category)
-    fetchData(category)
-  }
-
-  const fetchData = async (category) => {
     try {
-      let apiUrl = ''
-      switch (category) {
-        case '依照時間：新到舊':
-          apiUrl = 'http://localhost:3005/api/postlist/newest'
-          break
-        case '依照時間：舊到新':
-          apiUrl = 'http://localhost:3005/api/postlist/oldest'
-          break
-        case '依照人氣：多到少':
-          apiUrl = 'http://localhost:3005/api/postlist/popularity'
-          break
-        case '依照人氣：少到多':
-          apiUrl = 'http://localhost:3005/api/postlist/oldestFirst'
-          break
-        default:
-          break
-      }
-
-      if (apiUrl) {
-        const response = await axios.get(apiUrl)
-        if (response.data) {
-          setForum(response.data.forums)
-          console.log(response.data.forums)
-        }
-        setData(response.data)
-      }
+      const response = await axios.get('http://localhost:3005/api/postlist/')
+      setData(response.data)
     } catch (error) {
       console.error('資料獲取失敗:', error)
     }
   }
-  // 分頁
 
   useEffect(() => {
-    fetchData(selectedCategory)
-  }, [selectedCategory])
-  console.log(forum)
-  // console.log(data)
+    ChooseCategory()
+  }, [])
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category)
+    sortForums(category)
+    setForumOffset(0)
+  }
+  const sortForums = (category) => {
+    const sortedForums = [...data.forums]
+
+    switch (category) {
+      case '依照時間：新到舊':
+        sortedForums.sort((a, b) => new Date(b.forum_dt) - new Date(a.forum_dt))
+        break
+      case '依照時間：舊到新':
+        sortedForums.sort((a, b) => new Date(a.forum_dt) - new Date(b.forum_dt))
+        break
+      case '依照人氣：多到少':
+        sortedForums.sort((a, b) => b.likesCount - a.likesCount)
+        break
+      case '依照人氣：少到多':
+        sortedForums.sort((a, b) => a.likesCount - b.likesCount)
+        break
+      default:
+        break
+    }
+
+    setData((prevData) => ({
+      ...prevData,
+      forums: sortedForums,
+    }))
+  }
+
+  console.log(data)
 
   // 分頁
   const forumPerPage = 6
-
-  // 這裡使用項目偏移量來控制當前頁顯示的項目。
   const [forumOffset, setForumOffset] = useState(0)
-
-  // 模擬從其他資源獲取項目。
   const endOffset = forumOffset + forumPerPage
-  // console.log(`正在載入項目從 ${forumOffset} 到 ${endOffset}`)
-  const currentForum = forum.slice(forumOffset, endOffset)
-  console.log(currentForum)
-  const pageCount = Math.ceil(forum.length / forumPerPage)
-  // 當用戶點擊請求下一頁時調用。
+  const currentForum = data ? data.forums.slice(forumOffset, endOffset) : []
+  const pageCount = Math.ceil(data ? data.forums.length / forumPerPage : 0)
+
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * forumPerPage) % forum.length
-    // console.log(`用戶請求頁數 ${event.selected}，對應的偏移量為 ${newOffset}`)
+    const newOffset =
+      (event.selected * forumPerPage) % (data ? data.forums.length : 0)
     setForumOffset(newOffset)
   }
 
   return (
     <>
       <h1 className={styles.forumTitle}>COMMUNICATE｜討論區</h1>
-      <Swiper
-        loop={true}
-        spaceBetween={30}
-        effect={'fade'}
-        // navigation={true}
-        autoplay={{
-          delay: 500,
-          disableOnInteraction: false,
-        }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[EffectFade, Navigation, Pagination]}
-        className={`${styles.swiper}`}
-      >
-        <SwiperSlide className={`${styles.swiperslide}`}>
-          <img src="/images/cover1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide className={`${styles.swiperslide}`}>
-          <img src="/images/cover2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide className={`${styles.swiperslide}`}>
-          <img src="/images/cover3.jpg" />
-        </SwiperSlide>
-      </Swiper>
+      <SwiperComponent />
       <div className={styles.nestedMenu}>
         {menuItems.map((menuItem, index) => (
-          // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/interactive-supports-focus
+          // eslint-disable-next-line jsx-a11y/click-events-have-key-events
           <div
             onClick={() => {
               handleTypeClick(menuItem)
-              // navActive ? setActive(false) : setActive(true)
               handleActiveClick(menuItem)
             }}
             role="button"
@@ -203,7 +156,6 @@ function PostList() {
 
       {data && data.forums && data.forums.length > 0 ? (
         <div className={styles.all}>
-          {/* 全部的內容start */}
           <div className={`${styles.asideRight} `}>
             <div
               className={`d-flex justify-content-between ${styles.buttonPost}`}
@@ -220,7 +172,7 @@ function PostList() {
                 </button>
                 <ul
                   className="dropdown-menu"
-                  ariaLabelledBy="dropdownMenuButton1"
+                  aria-labelledby="dropdownMenuButton1"
                 >
                   <li>
                     <button
@@ -228,7 +180,6 @@ function PostList() {
                         handleCategoryClick('依照時間：新到舊')
                       }}
                       className="dropdown-item"
-                      href="#"
                     >
                       依照時間：新到舊
                     </button>
@@ -238,8 +189,7 @@ function PostList() {
                       onClick={() => {
                         handleCategoryClick('依照時間：舊到新')
                       }}
-                      class="dropdown-item"
-                      href="#"
+                      className="dropdown-item"
                     >
                       依照時間：舊到新
                     </button>
@@ -249,8 +199,7 @@ function PostList() {
                       onClick={() => {
                         handleCategoryClick('依照人氣：多到少')
                       }}
-                      class="dropdown-item"
-                      href="#"
+                      className="dropdown-item"
                     >
                       依照人氣：多到少
                     </button>
@@ -260,8 +209,7 @@ function PostList() {
                       onClick={() => {
                         handleCategoryClick('依照人氣：少到多')
                       }}
-                      class="dropdown-item"
-                      href="#"
+                      className="dropdown-item"
                     >
                       依照人氣：少到多
                     </button>
@@ -282,7 +230,7 @@ function PostList() {
                 />
               </Link>
             </div>
-            {console.log(currentForum)}
+            {/* {console.log(currentForum)} */}
             {currentForum.map((item, index) => (
               <Link
                 key={index}
@@ -290,46 +238,32 @@ function PostList() {
                 style={{ color: '#3e3b35', textDecoration: 'none' }}
               >
                 <div className={styles.list}>
-                  {/* 裡面的內容start */}
                   <div className={styles.content}>
-                    {/* 使用者圖片id跟日期start */}
-                    <div
-                      className={`d-block
-                    ${styles.userInfo}`}
-                    >
-                      <p
-                        className={`text-secondary
-                      ${styles.date}`}
-                      >
+                    <div className={`d-block ${styles.userInfo}`}>
+                      <p className={`text-secondary ${styles.date}`}>
                         {item.forum_dt}
                       </p>
                       <div className={`d-flex`}>
                         <p className={styles.userId}>{item.name}</p>
                         <p
-                          className={`text-secondary text-decoration-underline
-                        ${styles.type}`}
+                          className={`text-secondary text-decoration-underline ${styles.type}`}
                         >
                           {item.type}
                         </p>
                       </div>
                     </div>
-                    {/* 使用者圖片id跟日期end */}
-                    {/* 露營標題跟內容start */}
                     <p className={styles.title}>
-                      {/* 超過14個字就縮短加上... */}
                       {item.title.length > 20
                         ? `${item.title.substring(0, 14)}.......`
                         : item.title}
                     </p>
                     <div className={styles.allInfo}>
                       <div className={styles.comments}>
-                        {/* 標題跟內文 */}
                         <p className={styles.contentText}>
                           {item.content.length > 100
                             ? `${item.content.substring(0, 100)}.......`
                             : item.content}
                         </p>
-                        {/* 按讚跟留言區start */}
                         <div className={`d-flex ${styles.commentAndFire}`}>
                           <div className={`d-flex ${styles.fires}`}>
                             <BsFire className={styles.fire} />
@@ -344,13 +278,10 @@ function PostList() {
                             </p>
                           </div>
                         </div>
-                        {/* 案讚跟留言區end*/}
                       </div>
-                      {/* 文章的照片 */}
                       {item.img_1 != 0 && (
                         <Image
-                          className={`object-fit-cover
-                        ${styles.camp1}`}
+                          className={`object-fit-cover ${styles.camp1}`}
                           src={`http://localhost:3005/uploads/forum/${item.img_1}`}
                           alt="文章照片"
                           width={254}
@@ -358,9 +289,7 @@ function PostList() {
                         />
                       )}
                     </div>
-                    {/* 露營標題跟內容end */}
                   </div>
-                  {/* 裡面的內容end */}
                 </div>
               </Link>
             ))}
@@ -386,16 +315,12 @@ function PostList() {
               />
             </div>
           </div>
-          {/* 全部的內容end */}
         </div>
       ) : (
         <div>找不到資料</div>
       )}
-      {/* <GetPostData
-        onDataFetched={onDataFetched}
-        category={setSelectedCategory}
-      /> */}
     </>
   )
 }
+
 export default PostList

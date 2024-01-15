@@ -71,13 +71,14 @@ export default function Index() {
       title: '留言成功',
       icon: 'success',
       confirmButtonText: '確定',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        location.reload()
-      }
     })
 
-    const updatedComments = [...data.comments.rows, response.data.comment]
+    // const updatedComments = [...data.comments[0].rows, response.data.comment]
+    const updatedComments = [
+      ...(data.comments[0]?.rows || []),
+      response.data.comment,
+    ]
+
     setData((prevData) => ({
       ...prevData,
       comments: {
@@ -115,16 +116,7 @@ export default function Index() {
   const countIconName = isActive ? styles.fireIconActive : styles.fire
   return (
     <>
-      {/* 下面是navbar */}
-      {/* <div className={styles.nestedMenu}>
-        {forumMenuData.map((menuItem, index) => (
-          <div key={index} className={styles.menuItem}>
-            <span className={styles.menuItemLabel}>{menuItem.label}</span>
-          </div>
-        ))}
-      </div> */}
-
-      {data && data.forum && data.comments ? (
+      {data && data.forum[0] && data.comments[0] ? (
         <div className={styles.all}>
           {/* aside-right */}
           <div className={`${styles.asideRight} `}>
