@@ -86,7 +86,6 @@ export default function Index() {
         rows: updatedComments,
       },
     }))
-    //
   }
 
   // 這邊是在說當我執行這個函式，才會執行try裡面的東西，包括axios的更新資料庫
@@ -230,7 +229,7 @@ export default function Index() {
                 <p className={styles.messageDate}>{currentTime}</p>
               </div>
               {/* 回應留言 */}
-              {/*  */}
+
               <div className="form-floating px-2">
                 <textarea
                   value={content}

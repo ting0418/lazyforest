@@ -26,51 +26,10 @@ function PostModal() {
     console.log(files)
     setSelectedFiles(files)
   }
-  console.log(type)
-
-  // --第二版
-  // const postImages = async () => {
-  //   const formData = new FormData()
-
-  //   const keys = Object.keys(selectedFiles)
-
-  //   console.log(keys)
-
-  //   if (keys.length > 0) {
-  //     keys.forEach((v) => {
-  //       formData.append('images', selectedFiles[v])
-  //     })
-  //   }
-  //   console.log(formData)
-  //   console.log(formData.getAll('images'))
-  //   let data = formData.getAll('images')
-  //   data = data[0]
-  //   console.log('這是data', data)
-  //   for (let i = 0; i < data.length; i++) {
-  //     try {
-  //       const response = await axios.post(
-  //         'http://localhost:3005/api/postlist/',
-  //         data,
-  //         {
-  //           withCredentials: true,
-  //           headers: {
-  //             'Content-Type': 'multipart/form-data', // 設置內容類型為 multipart/form-data
-  //           },
-  //         }
-  //       )
-  //       // 處理成功回應
-  //       console.log('成功', response.data)
-  //     } catch (error) {
-  //       // 處理錯誤
-  //       console.error('發送請求錯誤', error)
-  //     }
-  //   }
-  // }
-  //============================
+  // console.log(type)
   const postImages = async () => {
-    // 創建一個 FormData 物件
     const formData = new FormData()
-    // let formDataArr
+
     const keys = Object.keys(selectedFiles)
 
     console.log(keys)
@@ -78,8 +37,6 @@ function PostModal() {
     if (keys.length > 0) {
       keys.forEach((v) => {
         formData.append('avatars', selectedFiles[v])
-        // formDataArr = formData.getAll('avatars')
-        // console.log('formDataArr', formDataArr)
       })
     }
 
@@ -119,7 +76,6 @@ function PostModal() {
   //=============================
   const post = async (img1, img2, img3) => {
     if (!title || !content || !type) {
-      // 如果標題、內容或類別有任何一個未輸入文字，顯示通知
       Swal.fire({
         title: '發布失敗',
         text: '標題、內容和類別為必填項目',
@@ -128,7 +84,7 @@ function PostModal() {
       })
       return // 不繼續執行發布流程
     }
-    console.log(img1)
+    // console.log(img1)
     const tagData = {}
     for (let i = 0; i < tags.length; i++) {
       tagData[`tag_${i + 1}`] = tags[i]
@@ -139,7 +95,6 @@ function PostModal() {
       title: title,
       type: type,
       content: content,
-      // forum_dt: new Date().toISOString(),
       likesCount: 0,
       img_1: img1,
       img_2: img2,
@@ -166,7 +121,7 @@ function PostModal() {
     setSelectedCategory(category)
   }
 
-  // 標籤套件測試
+  // 標籤套件
   const { token } = theme.useToken()
   const [tags, setTags] = useState([])
   const [inputVisible, setInputVisible] = useState(false)
@@ -225,7 +180,6 @@ function PostModal() {
   return (
     <>
       <div className={styles.all}>
-        {/* <div className={styles.asideLeft}>aside-left</div> */}
         <div className={`${styles.asideRight} px-1 container`}>
           <div>
             <h1 className={`text-center  border-bottom p-3 ${styles.title}`}>
@@ -345,7 +299,7 @@ function PostModal() {
               </div>
             </div>
           </div>
-          {/* 發文規則及下拉式選單end */}
+
           {/* 標題start */}
           <div>
             <div className="form-floating">
