@@ -17,17 +17,11 @@ import {
   getForums,
   getForumsWithQS,
   getForumById,
-  // countWithQS,
   updateUserById,
-  // updateUser,
   getCommentsWithQS,
   getCount,
   createUser,
 } from '../models/postlist.js'
-
-// SELECT forum.*, member.*
-// FROM forum
-// LEFT JOIN member ON forum.member_id = member.id
 
 // 拉到全部資料
 router.get('/', async function (req, res, next) {
@@ -425,7 +419,7 @@ router.post('/', async function (req, res, next) {
     return res.json({ message: 'fail', code: '400' })
   }
   // 這裡可以再檢查從react來的資料，哪些資料為必要(name, username...)
-  // console.log('這art', article)
+
   // 新增至資料庫
   const result = await createUser(article)
   // console.log('這是我想要的資料', req)

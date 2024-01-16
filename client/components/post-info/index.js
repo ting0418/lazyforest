@@ -71,6 +71,8 @@ export default function Index() {
       title: '留言成功',
       icon: 'success',
       confirmButtonText: '確定',
+    }).then(() => {
+      window.location.reload()
     })
 
     // const updatedComments = [...data.comments[0].rows, response.data.comment]
@@ -213,13 +215,13 @@ export default function Index() {
                 <FaCommentDots className={styles.comment} />
                 <p className={styles.commentCount}>{data.comments[0].length}</p>
               </div>
-              {user.id === data.forum[0].member_id ? (
+              {/* {user.id === data.forum[0].member_id ? (
                 <Link className="ms-auto" href="/edit-post">
                   <button className="btn d-flex">
                     <PiPencilSimpleLineDuotone className={styles.edit} />
                   </button>
                 </Link>
-              ) : null}
+              ) : null} */}
             </div>
             {/* 按讚留言end */}
             {/* 留言區塊start */}

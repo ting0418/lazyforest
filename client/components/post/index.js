@@ -75,6 +75,15 @@ function PostModal() {
   }
   //=============================
   const post = async (img1, img2, img3) => {
+    if (!user.id) {
+      Swal.fire({
+        title: '尚未登入',
+        text: '請先登入才可以繼續發布文章喔!',
+        icon: 'error',
+        confirmButtonText: '確定',
+      })
+      return // 不繼續執行發布流程
+    }
     if (!title || !content || !type) {
       Swal.fire({
         title: '發布失敗',
